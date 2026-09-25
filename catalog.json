@@ -1,0 +1,5353 @@
+{
+  "branches": {
+    "smouha": {
+      "name": "Smouha Club",
+      "city": "Alexandria",
+      "catalog": "smouha"
+    },
+    "alex-west": {
+      "name": "Alex West Compound",
+      "city": "Alexandria",
+      "catalog": "alex-west"
+    },
+    "moharam-beek": {
+      "name": "Wadi Degla Club Moharam Beek",
+      "city": "Alexandria",
+      "catalog": "moharam"
+    },
+    "teleperformance-alex": {
+      "name": "Teleperformance Alexandria",
+      "city": "Alexandria",
+      "catalog": "platz"
+    },
+    "wadi-maadi": {
+      "name": "Wadi Degla Club Maadi",
+      "city": "Cairo",
+      "catalog": "wadi"
+    },
+    "wadi-nakhil": {
+      "name": "Wadi Degla Club Nakhil",
+      "city": "Cairo",
+      "catalog": "wadi"
+    },
+    "bonyan-nasr": {
+      "name": "Bonyan Nasr City",
+      "city": "Cairo",
+      "catalog": "wadi"
+    },
+    "platz": {
+      "name": "Platz",
+      "city": "Cairo",
+      "catalog": "platz"
+    },
+    "teleperformance-cairo": {
+      "name": "Teleperformance Cairo",
+      "city": "Cairo",
+      "catalog": "platz"
+    },
+    "bonyan-new-cairo": {
+      "name": "Bonyan New Cairo",
+      "city": "Cairo",
+      "catalog": "platz"
+    }
+  },
+  "catalogs": {
+    "smouha": [
+      {
+        "name": "Breakfast",
+        "items": [
+          {
+            "id": "english-breakfast",
+            "name": "English Breakfast",
+            "prices": [
+              270
+            ],
+            "description": "Eggs, sausages, white beans, beef bacon, loaf bread and potato slices."
+          },
+          {
+            "id": "green-breakfast",
+            "name": "Green Breakfast",
+            "prices": [
+              275
+            ],
+            "description": "Eggs, smoked salmon, Kiri cheese, avocado, salad, potato slices, loaf bread, honey and mini donuts."
+          },
+          {
+            "id": "american-breakfast",
+            "name": "American Breakfast",
+            "prices": [
+              210
+            ],
+            "description": "Eggs, vegetables, chicken sausage, cheddar cheese, potato slices, loaf bread and mini pancakes."
+          }
+        ]
+      },
+      {
+        "name": "Egg plates",
+        "items": [
+          {
+            "id": "plain-omelet",
+            "name": "Plain Omelet",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "cheese-omelet",
+            "name": "Cheese Omelet",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "bacon-omelet",
+            "name": "Bacon Omelet",
+            "prices": [
+              170
+            ]
+          },
+          {
+            "id": "spanish-omelet",
+            "name": "Spanish Omelet",
+            "prices": [
+              160
+            ]
+          },
+          {
+            "id": "salmon-dill-omelet",
+            "name": "Salmon Dill Omelet",
+            "prices": [
+              200
+            ]
+          },
+          {
+            "id": "salami-omelet",
+            "name": "Salami Omelet",
+            "prices": [
+              170
+            ]
+          },
+          {
+            "id": "pastrami-omelet",
+            "name": "Pastrami Omelet",
+            "prices": [
+              170
+            ]
+          },
+          {
+            "id": "tortilla-salami-mozzarella-omelet",
+            "name": "Tortilla Salami Mozzarella Omelet",
+            "prices": [
+              210
+            ]
+          },
+          {
+            "id": "chicken-crispy-pan",
+            "name": "Chicken Crispy Pan",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "meat-pan",
+            "name": "Meat Pan",
+            "prices": [
+              160
+            ]
+          },
+          {
+            "id": "pastrami-pan",
+            "name": "Pastrami Pan",
+            "prices": [
+              170
+            ]
+          },
+          {
+            "id": "sujuk-pan",
+            "name": "Sujuk Pan",
+            "prices": [
+              150
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Baked toast & croissants",
+        "items": [
+          {
+            "id": "croque-madame",
+            "name": "Croque Madame",
+            "prices": [
+              200
+            ]
+          },
+          {
+            "id": "croque-monsieur",
+            "name": "Croque Monsieur",
+            "prices": [
+              200
+            ]
+          },
+          {
+            "id": "halloumi-toast",
+            "name": "Halloumi Toast",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "croissant-plain-with-jam-honey",
+            "name": "Croissant Plain with Jam & Honey",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "croissant-feta-cheese-thyme",
+            "name": "Croissant Feta Cheese & Thyme",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "croissant-smoked-turkey-cheese",
+            "name": "Croissant Smoked Turkey & Cheese",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "croissant-mix-cheese",
+            "name": "Croissant Mix Cheese",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "croissant-omelet-cheddar",
+            "name": "Croissant Omelet & Cheddar",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "croissant-creamy-cheese-salmon",
+            "name": "Croissant Creamy Cheese & Salmon",
+            "prices": [
+              210
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Snacks",
+        "items": [
+          {
+            "id": "mozzarella-sticks",
+            "name": "Mozzarella Sticks",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "moussaka",
+            "name": "Moussaka",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "cheese-fries",
+            "name": "Cheese Fries",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "chicken-strips",
+            "name": "Chicken Strips",
+            "prices": [
+              175
+            ]
+          },
+          {
+            "id": "fried-chicken-wings",
+            "name": "Fried Chicken Wings",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "garlic-cheese-bread",
+            "name": "Garlic Cheese Bread",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "fried-chicken-supreme",
+            "name": "Fried Chicken Supreme",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "mix-snacks",
+            "name": "Mix Snacks",
+            "prices": [
+              95
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salads",
+        "items": [
+          {
+            "id": "crispy-chicken-caesar",
+            "name": "Crispy Chicken Caesar",
+            "prices": [
+              200
+            ]
+          },
+          {
+            "id": "greek-salad",
+            "name": "Greek Salad",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "tuna-pasta-salad",
+            "name": "Tuna Pasta Salad",
+            "prices": [
+              175
+            ]
+          },
+          {
+            "id": "crispy-salad",
+            "name": "Crispy Salad",
+            "prices": [
+              210
+            ]
+          },
+          {
+            "id": "california-salad",
+            "name": "California Salad",
+            "prices": [
+              210
+            ]
+          },
+          {
+            "id": "halloumi-salad",
+            "name": "Halloumi Salad",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "hawaiian-chicken-salad",
+            "name": "Hawaiian Chicken Salad",
+            "prices": [
+              275
+            ]
+          },
+          {
+            "id": "avocado-salad",
+            "name": "Avocado Salad",
+            "prices": [
+              245
+            ]
+          },
+          {
+            "id": "chicken-pasta-salad",
+            "name": "Chicken Pasta Salad",
+            "prices": [
+              180
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Soup",
+        "items": [
+          {
+            "id": "soup-of-the-day",
+            "name": "Soup of the Day",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "cr-me-de-volaille",
+            "name": "Crème de Volaille",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "mushroom-soup",
+            "name": "Mushroom Soup",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "brown-beef-soup",
+            "name": "Brown Beef Soup",
+            "prices": [
+              175
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sandwiches",
+        "items": [
+          {
+            "id": "crispy-chicken",
+            "name": "Crispy Chicken",
+            "prices": [
+              205
+            ]
+          },
+          {
+            "id": "zinger",
+            "name": "Zinger",
+            "prices": [
+              215
+            ]
+          },
+          {
+            "id": "chicken-pesto",
+            "name": "Chicken Pesto",
+            "prices": [
+              270
+            ]
+          },
+          {
+            "id": "grilled-chicken",
+            "name": "Grilled Chicken",
+            "prices": [
+              175
+            ]
+          },
+          {
+            "id": "crispy-shrimp",
+            "name": "Crispy Shrimp",
+            "prices": [
+              350
+            ]
+          },
+          {
+            "id": "philadelphia-steak",
+            "name": "Philadelphia Steak",
+            "prices": [
+              240
+            ]
+          },
+          {
+            "id": "fajita-chicken",
+            "name": "Fajita Chicken",
+            "prices": [
+              170
+            ]
+          },
+          {
+            "id": "beef-mushroom",
+            "name": "Beef Mushroom",
+            "prices": [
+              240
+            ]
+          },
+          {
+            "id": "mexican-chicken",
+            "name": "Mexican Chicken",
+            "prices": [
+              170
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Burgers",
+        "items": [
+          {
+            "id": "classic-burger",
+            "name": "Classic Burger",
+            "prices": [
+              190
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "cheese-burger",
+            "name": "Cheese Burger",
+            "prices": [
+              245
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "mix-cheese-burger",
+            "name": "Mix Cheese Burger",
+            "prices": [
+              260
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "double-cheese-burger",
+            "name": "Double Cheese Burger",
+            "prices": [
+              455
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "ranch-burger",
+            "name": "Ranch Burger",
+            "prices": [
+              265
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "caramelized-onion-mushroom-burger",
+            "name": "Caramelized Onion & Mushroom Burger",
+            "prices": [
+              225
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "classic-chicken-burger",
+            "name": "Classic Chicken Burger",
+            "prices": [
+              160
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "chicken-cheese-burger",
+            "name": "Chicken Cheese Burger",
+            "prices": [
+              210
+            ],
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          },
+          {
+            "id": "green-burger",
+            "name": "Green Burger",
+            "prices": [
+              265
+            ],
+            "description": "Mozzarella sticks, minced meat, mozzarella cheese, tomato, pickled cucumber and lettuce.",
+            "modifiers": {
+              "title": "Available add-ons",
+              "min": 0,
+              "max": 4,
+              "required": false,
+              "options": [
+                "Onion rings",
+                "Beef bacon",
+                "Extra cheese",
+                "Extra sauce"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Grills",
+        "items": [
+          {
+            "id": "shish-tawook",
+            "name": "Shish Tawook",
+            "prices": [
+              320
+            ]
+          },
+          {
+            "id": "musahab-chicken",
+            "name": "Musahab Chicken",
+            "prices": [
+              370
+            ]
+          },
+          {
+            "id": "tandoori-chicken",
+            "name": "Tandoori Chicken",
+            "prices": [
+              320
+            ]
+          },
+          {
+            "id": "kofta",
+            "name": "Kofta",
+            "prices": [
+              420
+            ]
+          },
+          {
+            "id": "green-mix-grill",
+            "name": "Green Mix Grill",
+            "prices": [
+              600
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mexican",
+        "items": [
+          {
+            "id": "nachos",
+            "name": "Nachos",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "nachos-beef",
+            "name": "Nachos Beef",
+            "prices": [
+              210
+            ]
+          },
+          {
+            "id": "taco-meat",
+            "name": "Taco Meat",
+            "prices": [
+              250
+            ]
+          },
+          {
+            "id": "taco-chicken",
+            "name": "Taco Chicken",
+            "prices": [
+              160
+            ]
+          },
+          {
+            "id": "quesadilla-meat",
+            "name": "Quesadilla Meat",
+            "prices": [
+              250
+            ]
+          },
+          {
+            "id": "quesadilla-chicken",
+            "name": "Quesadilla Chicken",
+            "prices": [
+              160
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pasta",
+        "items": [
+          {
+            "id": "penne-arrabiata",
+            "name": "Penne Arrabiata",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "spaghetti-bolognaise",
+            "name": "Spaghetti Bolognaise",
+            "prices": [
+              235
+            ]
+          },
+          {
+            "id": "alfredo-fettuccine",
+            "name": "Alfredo Fettuccine",
+            "prices": [
+              250
+            ]
+          },
+          {
+            "id": "pesto-chicken",
+            "name": "Pesto Chicken",
+            "prices": [
+              270
+            ]
+          },
+          {
+            "id": "mac-cheese",
+            "name": "Mac & Cheese",
+            "prices": [
+              215
+            ]
+          },
+          {
+            "id": "quattro-formaggi",
+            "name": "Quattro Formaggi",
+            "prices": [
+              175
+            ]
+          },
+          {
+            "id": "negresco-gratin",
+            "name": "Negresco Gratin",
+            "prices": [
+              250
+            ]
+          },
+          {
+            "id": "tagliatelle-shrimp",
+            "name": "Tagliatelle Shrimp",
+            "prices": [
+              395
+            ]
+          },
+          {
+            "id": "lasagna",
+            "name": "Lasagna",
+            "prices": [
+              170
+            ]
+          },
+          {
+            "id": "noodles",
+            "name": "Noodles",
+            "prices": [
+              180,
+              240,
+              340
+            ]
+          },
+          {
+            "id": "chinese-pasta",
+            "name": "Chinese Pasta",
+            "prices": [
+              185
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pizza",
+        "items": [
+          {
+            "id": "calzone",
+            "name": "Calzone",
+            "prices": [
+              195
+            ]
+          },
+          {
+            "id": "margherita",
+            "name": "Margherita",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "quattro-formaggi",
+            "name": "Quattro Formaggi",
+            "prices": [
+              200
+            ]
+          },
+          {
+            "id": "mushroom-pizza",
+            "name": "Mushroom Pizza",
+            "prices": [
+              180
+            ]
+          },
+          {
+            "id": "veggie-pizza",
+            "name": "Veggie Pizza",
+            "prices": [
+              180
+            ]
+          },
+          {
+            "id": "pastrami-pizza",
+            "name": "Pastrami Pizza",
+            "prices": [
+              235
+            ]
+          },
+          {
+            "id": "sujuk-pizza",
+            "name": "Sujuk Pizza",
+            "prices": [
+              230
+            ]
+          },
+          {
+            "id": "salami-pizza",
+            "name": "Salami Pizza",
+            "prices": [
+              235
+            ]
+          },
+          {
+            "id": "mix-meat-pizza",
+            "name": "Mix Meat Pizza",
+            "prices": [
+              285
+            ]
+          },
+          {
+            "id": "ranch-chicken-pizza",
+            "name": "Ranch Chicken Pizza",
+            "prices": [
+              250
+            ]
+          },
+          {
+            "id": "bbq-chicken-pizza",
+            "name": "BBQ Chicken Pizza",
+            "prices": [
+              250
+            ]
+          },
+          {
+            "id": "chicken-pesto-pizza",
+            "name": "Chicken Pesto Pizza",
+            "prices": [
+              220
+            ]
+          },
+          {
+            "id": "chicken-crunchy-cheese-pizza",
+            "name": "Chicken Crunchy Cheese Pizza",
+            "prices": [
+              220
+            ]
+          },
+          {
+            "id": "tuna-pizza",
+            "name": "Tuna Pizza",
+            "prices": [
+              260
+            ]
+          },
+          {
+            "id": "shrimp-pizza",
+            "name": "Shrimp Pizza",
+            "prices": [
+              280
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Main dishes",
+        "items": [
+          {
+            "id": "grilled-chicken-with-sauce",
+            "name": "Grilled Chicken with Sauce",
+            "prices": [
+              320
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "chicken-flaky",
+            "name": "Chicken Flaky",
+            "prices": [
+              320
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "chicken-roll",
+            "name": "Chicken Roll",
+            "prices": [
+              350
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "grilled-cordon-bleu",
+            "name": "Grilled Cordon Bleu",
+            "prices": [
+              340
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "chicken-fajita",
+            "name": "Chicken Fajita",
+            "prices": [
+              320
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "chicken-bbq-honey",
+            "name": "Chicken BBQ & Honey",
+            "prices": [
+              320
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "chicken-mustard-herbs-honey",
+            "name": "Chicken Mustard Herbs & Honey",
+            "prices": [
+              320
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "fillet-gravy-pepper",
+            "name": "Fillet Gravy Pepper",
+            "prices": [
+              470
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "fillet-rosemary",
+            "name": "Fillet Rosemary",
+            "prices": [
+              470
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "fillet-gravy-mushroom",
+            "name": "Fillet Gravy Mushroom",
+            "prices": [
+              470
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "scallop-paneh",
+            "name": "Scallop Paneh",
+            "prices": [
+              440
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "fajita-meat",
+            "name": "Fajita Meat",
+            "prices": [
+              440
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "beef-stroganoff",
+            "name": "Beef Stroganoff",
+            "prices": [
+              470
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "eminc-de-veau",
+            "name": "Emincé de Veau",
+            "prices": [
+              480
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "american-steak",
+            "name": "American Steak",
+            "prices": [
+              495
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "salmon-dill",
+            "name": "Salmon Dill",
+            "prices": [
+              560
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          },
+          {
+            "id": "salmon-creamy-lemon",
+            "name": "Salmon Creamy Lemon",
+            "prices": [
+              565
+            ],
+            "modifiers": {
+              "title": "Choose 2 sides",
+              "min": 2,
+              "max": 2,
+              "required": true,
+              "options": [
+                "Rice",
+                "Mashed potato",
+                "Sautéed vegetables"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "id": "donut",
+            "name": "Donut",
+            "prices": [
+              50,
+              55
+            ]
+          },
+          {
+            "id": "tiramisu",
+            "name": "Tiramisu",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "honey-cake",
+            "name": "Honey Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "carrot-cake",
+            "name": "Carrot Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "san-sebastian",
+            "name": "San Sebastian",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "cheesecake",
+            "name": "Cheesecake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "oreo-cake",
+            "name": "Oreo Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "red-velvet",
+            "name": "Red Velvet",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "new-dessert",
+            "name": "New Dessert",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "banoffee-cup",
+            "name": "Banoffee Cup",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "bon-bon-cheesecake",
+            "name": "Bon Bon Cheesecake",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "chocolate-fondue",
+            "name": "Chocolate Fondue",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "cookies-scoop",
+            "name": "Cookies Scoop",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "cookies-scoop-with-ice-cream",
+            "name": "Cookies Scoop with Ice Cream",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "cookie-scoop-ice",
+            "name": "Cookie Scoop Ice",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "cr-me-br-l-e",
+            "name": "Crème Brûlée",
+            "prices": [
+              155
+            ]
+          },
+          {
+            "id": "fettuccine-cr-pe",
+            "name": "Fettuccine Crêpe",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "nutella-cr-pe",
+            "name": "Nutella Crêpe",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "london-cake",
+            "name": "London Cake",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "layali-lubnan",
+            "name": "Layali Lubnan",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "mini-pancake",
+            "name": "Mini Pancake",
+            "prices": [
+              80
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot coffee",
+        "items": [
+          {
+            "id": "espresso-single",
+            "name": "Espresso Single",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "espresso-double",
+            "name": "Espresso Double",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "macchiato-single",
+            "name": "Macchiato Single",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "macchiato-double",
+            "name": "Macchiato Double",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "flat-white",
+            "name": "Flat White",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "cappuccino",
+            "name": "Cappuccino",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "cinnamon-latte",
+            "name": "Cinnamon Latte",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "classic-corto",
+            "name": "Classic Corto",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "nescaf",
+            "name": "Nescafé",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "turkish-coffee-s-d",
+            "name": "Turkish Coffee S/D",
+            "prices": [
+              35,
+              45
+            ]
+          },
+          {
+            "id": "french-coffee",
+            "name": "French Coffee",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "nutella-turkish-coffee",
+            "name": "Nutella Turkish Coffee",
+            "prices": [
+              90
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iced coffee & frappe",
+        "items": [
+          {
+            "id": "iced-americano",
+            "name": "Iced Americano",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "iced-cappuccino",
+            "name": "Iced Cappuccino",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "iced-latte",
+            "name": "Iced Latte",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "iced-dulce-de-leche-latte",
+            "name": "Iced Dulce de Leche Latte",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "iced-spanish-latte",
+            "name": "Iced Spanish Latte",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "iced-caramel-macchiato",
+            "name": "Iced Caramel Macchiato",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "iced-mocha",
+            "name": "Iced Mocha",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "iced-white-mocha",
+            "name": "Iced White Mocha",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "affogato-espresso",
+            "name": "Affogato Espresso",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "espresso-frappe",
+            "name": "Espresso Frappe",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "double-caramel-frappe",
+            "name": "Double Caramel Frappe",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "mocha-frappe",
+            "name": "Mocha Frappe",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "white-mocha-frappe",
+            "name": "White Mocha Frappe",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "dulce-de-leche-frappe",
+            "name": "Dulce de Leche Frappe",
+            "prices": [
+              105
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Drinks",
+        "items": [
+          {
+            "id": "hot-chocolate",
+            "name": "Hot Chocolate",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "hot-chocolate-marshmallows",
+            "name": "Hot Chocolate Marshmallows",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "sahlab",
+            "name": "Sahlab",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "herbs",
+            "name": "Herbs",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "karak-tea",
+            "name": "Karak Tea",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "tea",
+            "name": "Tea",
+            "prices": [
+              25
+            ]
+          },
+          {
+            "id": "tea-with-milk",
+            "name": "Tea with Milk",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "vitamin-c",
+            "name": "Vitamin C",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "water",
+            "name": "Water",
+            "prices": [
+              15
+            ]
+          },
+          {
+            "id": "sparkling-water",
+            "name": "Sparkling Water",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "soft-drink",
+            "name": "Soft Drink",
+            "prices": [
+              30
+            ]
+          },
+          {
+            "id": "v7",
+            "name": "V7",
+            "prices": [
+              35
+            ]
+          },
+          {
+            "id": "iced-tea",
+            "name": "Iced Tea",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "iced-chocolate",
+            "name": "Iced Chocolate",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "smoothie",
+            "name": "Smoothie",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "mojito",
+            "name": "Mojito",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "milkshake",
+            "name": "Milkshake",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "fresh-juices",
+            "name": "Fresh Juices",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "boba-drinks",
+            "name": "Boba Drinks",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "vanilla-frappe-without-coffee",
+            "name": "Vanilla Frappe without Coffee",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "chocolate-frappe-without-coffee",
+            "name": "Chocolate Frappe without Coffee",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "caramel-frappe-without-coffee",
+            "name": "Caramel Frappe without Coffee",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "oreo-frappe-without-coffee",
+            "name": "Oreo Frappe without Coffee",
+            "prices": [
+              100
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Matcha & healthy mixes",
+        "items": [
+          {
+            "id": "matcha-latte",
+            "name": "Matcha Latte",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "iced-matcha",
+            "name": "Iced Matcha",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "strawberry-matcha",
+            "name": "Strawberry Matcha",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "pistachio-matcha",
+            "name": "Pistachio Matcha",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "mango-matcha",
+            "name": "Mango Matcha",
+            "prices": [
+              138
+            ]
+          },
+          {
+            "id": "chocolate-matcha",
+            "name": "Chocolate Matcha",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "avobanan",
+            "name": "Avobanan",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "b-p-m",
+            "name": "B.P.M",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "carpo",
+            "name": "Carpo",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "avocado-juice",
+            "name": "Avocado Juice",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "strowbavo",
+            "name": "Strowbavo",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "green-mix",
+            "name": "Green Mix",
+            "prices": [
+              125
+            ]
+          }
+        ]
+      }
+    ],
+    "alex-west": [
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "id": "donut",
+            "name": "Donut",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "cookies",
+            "name": "Cookies",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "waffle",
+            "name": "Waffle",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "pancake",
+            "name": "Pancake",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chocolate-truffle",
+            "name": "Chocolate Truffle",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "carrot-cake",
+            "name": "Carrot Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "honey-cake",
+            "name": "Honey Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "tiramisu",
+            "name": "Tiramisu",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "oreo-cake",
+            "name": "Oreo Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "red-velvet",
+            "name": "Red Velvet",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "trilece",
+            "name": "Trilece",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "brownie-chocolate",
+            "name": "Brownie Chocolate",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "molten-lotus",
+            "name": "Molten Lotus",
+            "prices": [
+              100
+            ],
+            "description": "Served with ice cream."
+          },
+          {
+            "id": "molten-chocolate",
+            "name": "Molten Chocolate",
+            "prices": [
+              100
+            ],
+            "description": "Served with ice cream."
+          },
+          {
+            "id": "cheesecake",
+            "name": "Cheesecake",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "cheesecake-lotus",
+            "name": "Cheesecake Lotus",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "cheesecake-blueberry",
+            "name": "Cheesecake Blueberry",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "cheesecake-san-sebastian",
+            "name": "Cheesecake San Sebastian",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "cheesecake-pistachio",
+            "name": "Cheesecake Pistachio",
+            "prices": [
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot coffee",
+        "items": [
+          {
+            "id": "espresso-single",
+            "name": "Espresso Single",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "espresso-double",
+            "name": "Espresso Double",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "macchiato-single",
+            "name": "Macchiato Single",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "macchiato-double",
+            "name": "Macchiato Double",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "flat-white",
+            "name": "Flat White",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "cappuccino",
+            "name": "Cappuccino",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cinnamon-latte",
+            "name": "Cinnamon Latte",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "classic-corto",
+            "name": "Classic Corto",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "nescaf",
+            "name": "Nescafé",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "turkish-coffee-s-d-t",
+            "name": "Turkish Coffee S/D/T",
+            "prices": [
+              40,
+              50,
+              55
+            ]
+          },
+          {
+            "id": "french-coffee",
+            "name": "French Coffee",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "nutella-turkish-coffee",
+            "name": "Nutella Turkish Coffee",
+            "prices": [
+              95
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot drinks",
+        "items": [
+          {
+            "id": "hot-chocolate",
+            "name": "Hot Chocolate",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "hot-chocolate-marshmallows",
+            "name": "Hot Chocolate Marshmallows",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "sahlab",
+            "name": "Sahlab",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "herbs",
+            "name": "Herbs",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "karak-tea",
+            "name": "Karak Tea",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "tea",
+            "name": "Tea",
+            "prices": [
+              35
+            ]
+          },
+          {
+            "id": "tea-with-milk",
+            "name": "Tea with Milk",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "vitamin-c",
+            "name": "Vitamin C",
+            "prices": [
+              70
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iced coffee",
+        "items": [
+          {
+            "id": "iced-americano",
+            "name": "Iced Americano",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "iced-cappuccino",
+            "name": "Iced Cappuccino",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "iced-latte",
+            "name": "Iced Latte",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "iced-dulce-de-leche-latte",
+            "name": "Iced Dulce de Leche Latte",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "iced-spanish-latte",
+            "name": "Iced Spanish Latte",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "iced-caramel-macchiato",
+            "name": "Iced Caramel Macchiato",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "iced-mocha",
+            "name": "Iced Mocha",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "iced-white-mocha",
+            "name": "Iced White Mocha",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "affogato-espresso",
+            "name": "Affogato Espresso",
+            "prices": [
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frappe",
+        "items": [
+          {
+            "id": "espresso-frappe",
+            "name": "Espresso Frappe",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "double-caramel-frappe",
+            "name": "Double Caramel Frappe",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "mocha-frappe",
+            "name": "Mocha Frappe",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "white-mocha-frappe",
+            "name": "White Mocha Frappe",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "dulce-de-leche-frappe",
+            "name": "Dulce de Leche Frappe",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "vanilla-frappe-without-coffee",
+            "name": "Vanilla Frappe without Coffee",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "chocolate-frappe-without-coffee",
+            "name": "Chocolate Frappe without Coffee",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "caramel-frappe-without-coffee",
+            "name": "Caramel Frappe without Coffee",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "oreo-frappe-without-coffee",
+            "name": "Oreo Frappe without Coffee",
+            "prices": [
+              115
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cold drinks",
+        "items": [
+          {
+            "id": "water",
+            "name": "Water",
+            "prices": [
+              10
+            ]
+          },
+          {
+            "id": "sparkling-water",
+            "name": "Sparkling Water",
+            "prices": [
+              25
+            ]
+          },
+          {
+            "id": "soft-drink",
+            "name": "Soft Drink",
+            "prices": [
+              25
+            ]
+          },
+          {
+            "id": "v7",
+            "name": "V7",
+            "prices": [
+              35
+            ]
+          },
+          {
+            "id": "iced-tea",
+            "name": "Iced Tea",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "iced-chocolate",
+            "name": "Iced Chocolate",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "smoothie",
+            "name": "Smoothie",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "mojito",
+            "name": "Mojito",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "milkshake",
+            "name": "Milkshake",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "fresh-juices",
+            "name": "Fresh Juices",
+            "prices": []
+          },
+          {
+            "id": "boba-drinks",
+            "name": "Boba Drinks",
+            "prices": [
+              120
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Matcha",
+        "items": [
+          {
+            "id": "matcha-latte",
+            "name": "Matcha Latte",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "iced-matcha",
+            "name": "Iced Matcha",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "strawberry-matcha",
+            "name": "Strawberry Matcha",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "pistachio-matcha",
+            "name": "Pistachio Matcha",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "mango-matcha",
+            "name": "Mango Matcha",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "chocolate-matcha",
+            "name": "Chocolate Matcha",
+            "prices": [
+              145
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Healthy mixes",
+        "items": [
+          {
+            "id": "avobanan",
+            "name": "Avobanan",
+            "prices": [
+              135
+            ],
+            "description": "Avocado, banana, almonds and milk."
+          },
+          {
+            "id": "b-p-m",
+            "name": "B.P.M",
+            "prices": [
+              135
+            ],
+            "description": "Banana, pineapple, mango, yogurt, almonds and milk."
+          },
+          {
+            "id": "carpo",
+            "name": "Carpo",
+            "prices": [
+              135
+            ],
+            "description": "Carrot, pineapple, banana, orange, honey, almonds and milk."
+          },
+          {
+            "id": "avocado-juice",
+            "name": "Avocado Juice",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "strowbavo",
+            "name": "Strowbavo",
+            "prices": [
+              135
+            ],
+            "description": "Strawberry, avocado, banana, almonds and milk."
+          },
+          {
+            "id": "green-mix",
+            "name": "Green Mix",
+            "prices": [
+              140
+            ],
+            "description": "Avocado, kiwi and green apple."
+          }
+        ]
+      }
+    ],
+    "moharam": [
+      {
+        "name": "Sandwiches",
+        "items": [
+          {
+            "id": "emmental-turkey-ciabatta",
+            "name": "Emmental Turkey Ciabatta",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "quesadilla-wrap",
+            "name": "Quesadilla Wrap",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "chicken-beef",
+            "name": "Chicken Beef",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "bbq",
+            "name": "BBQ",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "club-roast-beef-turkey-chicken",
+            "name": "Club (Roast Beef, Turkey & Chicken)",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "turkey-club",
+            "name": "Turkey Club",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "panini-halloumi",
+            "name": "Panini Halloumi",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "tuna-mix",
+            "name": "Tuna Mix",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chicken-tandoori",
+            "name": "Chicken Tandoori",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chicken-pesto",
+            "name": "Chicken Pesto",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "roast-beef-mushroom",
+            "name": "Roast Beef Mushroom",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "cheese-lovers",
+            "name": "Cheese Lovers",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chicken-ranch",
+            "name": "Chicken Ranch",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chicken-cheddar-cheese",
+            "name": "Chicken Cheddar Cheese",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "shish-tawook",
+            "name": "Shish Tawook",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "chicken-sweet-sour",
+            "name": "Chicken Sweet & Sour",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chicken-alfredo",
+            "name": "Chicken Alfredo",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chicken-dynamite",
+            "name": "Chicken Dynamite",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "loaf-turkey-beef",
+            "name": "Loaf Turkey Beef",
+            "prices": [
+              120
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salads",
+        "items": [
+          {
+            "id": "greek-salad",
+            "name": "Greek Salad",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "tuna-pasta-salad",
+            "name": "Tuna Pasta Salad",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "chef-salad",
+            "name": "Chef Salad",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "chicken-caesar-salad",
+            "name": "Chicken Caesar Salad",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "chicken-pasta-salad",
+            "name": "Chicken Pasta Salad",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "california-salad",
+            "name": "California Salad",
+            "prices": [
+              160
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bakery",
+        "items": [
+          {
+            "id": "donut-mini-donut-box",
+            "name": "Donut / Mini Donut Box",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "croissant-plain-zaatar",
+            "name": "Croissant Plain / Zaatar",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "croissant-cheese",
+            "name": "Croissant Cheese",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "croissant-turkey-cheese",
+            "name": "Croissant Turkey & Cheese",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "croissant-cheese-olives",
+            "name": "Croissant Cheese & Olives",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "croissant-cookies",
+            "name": "Croissant Cookies",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "croissant-b-chamel",
+            "name": "Croissant Béchamel",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "cinnamon-roll",
+            "name": "Cinnamon Roll",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "english-cake",
+            "name": "English Cake",
+            "prices": [
+              40
+            ]
+          },
+          {
+            "id": "lemon-cake",
+            "name": "Lemon Cake",
+            "prices": [
+              45
+            ]
+          },
+          {
+            "id": "muffin",
+            "name": "Muffin",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "p-t-turkey-cheese",
+            "name": "Pâté Turkey & Cheese",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "p-t-zaatar",
+            "name": "Pâté Zaatar",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "cup-cinnamon-roll",
+            "name": "Cup Cinnamon Roll",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "mini-donut",
+            "name": "Mini Donut",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "mini-p-t",
+            "name": "Mini Pâté",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "mini-pizza",
+            "name": "Mini Pizza",
+            "prices": [
+              80
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "id": "cookies",
+            "name": "Cookies",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "molten-cake",
+            "name": "Molten Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "brownie",
+            "name": "Brownie",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "chocolate-truffle-cake",
+            "name": "Chocolate Truffle Cake",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "cheesecake-plain",
+            "name": "Cheesecake Plain",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "cheesecake-flavours-pistachio",
+            "name": "Cheesecake Flavours / Pistachio",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "carrot-cake",
+            "name": "Carrot Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "tiramisu",
+            "name": "Tiramisu",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "honey-cake",
+            "name": "Honey Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "red-velvet",
+            "name": "Red Velvet",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "oreo-cake",
+            "name": "Oreo Cake",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "cake-pops",
+            "name": "Cake Pops",
+            "prices": [
+              35
+            ]
+          },
+          {
+            "id": "brownie-chocolate-cookies",
+            "name": "Brownie Chocolate / Cookies",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "clair",
+            "name": "Éclair",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "profiterole-cup-flavours-pistachio",
+            "name": "Profiterole Cup / Flavours / Pistachio",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "trilece",
+            "name": "Trilece",
+            "prices": []
+          }
+        ]
+      },
+      {
+        "name": "Hot drinks",
+        "items": [
+          {
+            "id": "espresso",
+            "name": "Espresso",
+            "prices": [
+              50,
+              55,
+              65
+            ]
+          },
+          {
+            "id": "macchiato",
+            "name": "Macchiato",
+            "prices": [
+              50,
+              55,
+              75
+            ]
+          },
+          {
+            "id": "corto-classic",
+            "name": "Corto Classic",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "flat-white",
+            "name": "Flat White",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              75,
+              85
+            ]
+          },
+          {
+            "id": "cappuccino",
+            "name": "Cappuccino",
+            "prices": [
+              85,
+              100
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              85,
+              100
+            ]
+          },
+          {
+            "id": "cinnamon-latte",
+            "name": "Cinnamon Latte",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              90,
+              115
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              90,
+              115
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "toffee-nut-latte",
+            "name": "Toffee Nut Latte",
+            "prices": [
+              115
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              105,
+              115
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              105,
+              115
+            ]
+          },
+          {
+            "id": "nescaf",
+            "name": "Nescafé",
+            "prices": [
+              45,
+              75
+            ]
+          },
+          {
+            "id": "turkish-coffee",
+            "name": "Turkish Coffee",
+            "prices": [
+              30,
+              45
+            ]
+          },
+          {
+            "id": "french-coffee",
+            "name": "French Coffee",
+            "prices": [
+              60,
+              80
+            ]
+          },
+          {
+            "id": "french-choco-coffee",
+            "name": "French Choco Coffee",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "lotus-latte",
+            "name": "Lotus Latte",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "hot-chocolate",
+            "name": "Hot Chocolate",
+            "prices": [
+              90,
+              110
+            ]
+          },
+          {
+            "id": "white-chocolate",
+            "name": "White Chocolate",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "hot-chocolate-marshmallow",
+            "name": "Hot Chocolate Marshmallow",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "pistachio",
+            "name": "Pistachio",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "sahlab",
+            "name": "Sahlab",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "tea-tea-flavour",
+            "name": "Tea / Tea Flavour",
+            "prices": [
+              20,
+              40,
+              45
+            ]
+          },
+          {
+            "id": "tea-with-milk",
+            "name": "Tea with Milk",
+            "prices": [
+              40,
+              55
+            ]
+          },
+          {
+            "id": "karak-tea",
+            "name": "Karak Tea",
+            "prices": [
+              45
+            ]
+          },
+          {
+            "id": "matcha",
+            "name": "Matcha",
+            "prices": [
+              120,
+              135
+            ]
+          },
+          {
+            "id": "anise-mint",
+            "name": "Anise / Mint",
+            "prices": [
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iced drinks",
+        "items": [
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "shaken-espresso",
+            "name": "Shaken Espresso",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "iced-chocolate",
+            "name": "Iced Chocolate",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "boba-iced-tea",
+            "name": "Boba Iced Tea",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "boba-fruits",
+            "name": "Boba Fruits",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "milkshake",
+            "name": "Milkshake",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "smoothie",
+            "name": "Smoothie",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "mojito",
+            "name": "Mojito",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "soft-drinks",
+            "name": "Soft Drinks",
+            "prices": [
+              30
+            ]
+          },
+          {
+            "id": "iced-tea",
+            "name": "Iced Tea",
+            "prices": [
+              45
+            ]
+          },
+          {
+            "id": "fresh-juices",
+            "name": "Fresh Juices",
+            "prices": [
+              55
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frappe",
+        "items": [
+          {
+            "id": "espresso-frappe",
+            "name": "Espresso Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "coffee-frappe",
+            "name": "Coffee Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "caramel-frappe",
+            "name": "Caramel Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "mocha-frappe",
+            "name": "Mocha Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "white-mocha-frappe",
+            "name": "White Mocha Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "dulce-de-leche-frappe",
+            "name": "Dulce de Leche Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "salted-caramel-frappe",
+            "name": "Salted Caramel Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "coffee-vanilla-frappe",
+            "name": "Coffee Vanilla Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "double-coffee-vanilla-frappe",
+            "name": "Double Coffee Vanilla Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "vanilla-cream-frappe",
+            "name": "Vanilla Cream Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "chocolate-cream-frappe",
+            "name": "Chocolate Cream Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "caramel-cream-frappe",
+            "name": "Caramel Cream Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "strawberry-cream-frappe",
+            "name": "Strawberry Cream Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "white-mocha-cream-frappe",
+            "name": "White Mocha Cream Frappe",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "matcha-frappe",
+            "name": "Matcha Frappe",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "frappe-desserts",
+            "name": "Frappe Desserts",
+            "prices": [
+              120
+            ]
+          }
+        ]
+      }
+    ],
+    "wadi": [
+      {
+        "name": "Sandwiches",
+        "items": [
+          {
+            "id": "emmental-turkey-ciabatta",
+            "name": "Emmental Turkey Ciabatta",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "quesadilla-wrap",
+            "name": "Quesadilla Wrap",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-beef",
+            "name": "Chicken Beef",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "bbq",
+            "name": "BBQ",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "club-roast-beef-turkey-chicken",
+            "name": "Club (Roast Beef, Turkey & Chicken)",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "turkey-club",
+            "name": "Turkey Club",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "panini-halloumi",
+            "name": "Panini Halloumi",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "tuna-mix",
+            "name": "Tuna Mix",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-tandoori",
+            "name": "Chicken Tandoori",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-pesto",
+            "name": "Chicken Pesto",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "roast-beef-mushroom",
+            "name": "Roast Beef Mushroom",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "cheese-lovers",
+            "name": "Cheese Lovers",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-ranch",
+            "name": "Chicken Ranch",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-cheddar-cheese",
+            "name": "Chicken Cheddar Cheese",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "shish-tawook",
+            "name": "Shish Tawook",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-sweet-sour",
+            "name": "Chicken Sweet & Sour",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-alfredo",
+            "name": "Chicken Alfredo",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-dynamite",
+            "name": "Chicken Dynamite",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "loaf-turkey-beef",
+            "name": "Loaf Turkey Beef",
+            "prices": [
+              140
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salads",
+        "items": [
+          {
+            "id": "greek-salad",
+            "name": "Greek Salad",
+            "prices": [
+              105
+            ]
+          },
+          {
+            "id": "tuna-pasta-salad",
+            "name": "Tuna Pasta Salad",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chef-salad",
+            "name": "Chef Salad",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-caesar-salad",
+            "name": "Chicken Caesar Salad",
+            "prices": [
+              125
+            ]
+          },
+          {
+            "id": "chicken-pasta-salad",
+            "name": "Chicken Pasta Salad",
+            "prices": [
+              145
+            ]
+          },
+          {
+            "id": "california-salad",
+            "name": "California Salad",
+            "prices": [
+              160
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bakery",
+        "items": [
+          {
+            "id": "donut-mini-donut-box",
+            "name": "Donut / Mini Donut Box",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "croissant-plain-zaatar",
+            "name": "Croissant Plain / Zaatar",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "croissant-cheese",
+            "name": "Croissant Cheese",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "croissant-turkey-cheese",
+            "name": "Croissant Turkey & Cheese",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "croissant-cheese-olives",
+            "name": "Croissant Cheese & Olives",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "croissant-cookies",
+            "name": "Croissant Cookies",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "croissant-b-chamel",
+            "name": "Croissant Béchamel",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "cinnamon-roll",
+            "name": "Cinnamon Roll",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "english-cake",
+            "name": "English Cake",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "lemon-cake",
+            "name": "Lemon Cake",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "muffin",
+            "name": "Muffin",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "p-t-turkey-cheese",
+            "name": "Pâté Turkey & Cheese",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "p-t-zaatar",
+            "name": "Pâté Zaatar",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "cup-cinnamon-roll",
+            "name": "Cup Cinnamon Roll",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "mini-donut",
+            "name": "Mini Donut",
+            "prices": [
+              70
+            ]
+          },
+          {
+            "id": "mini-p-t",
+            "name": "Mini Pâté",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "mini-pizza",
+            "name": "Mini Pizza",
+            "prices": [
+              85
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "id": "cookies",
+            "name": "Cookies",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "molten-cake",
+            "name": "Molten Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "brownie",
+            "name": "Brownie",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "chocolate-truffle-cake",
+            "name": "Chocolate Truffle Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cheesecake-plain",
+            "name": "Cheesecake Plain",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cheesecake-flavours-pistachio",
+            "name": "Cheesecake Flavours / Pistachio",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "carrot-cake",
+            "name": "Carrot Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "tiramisu",
+            "name": "Tiramisu",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "honey-cake",
+            "name": "Honey Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "red-velvet",
+            "name": "Red Velvet",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "oreo-cake",
+            "name": "Oreo Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cake-pops",
+            "name": "Cake Pops",
+            "prices": [
+              35
+            ]
+          },
+          {
+            "id": "brownie-chocolate-cookies",
+            "name": "Brownie Chocolate / Cookies",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "clair",
+            "name": "Éclair",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "profiterole-cup-flavours-pistachio",
+            "name": "Profiterole Cup / Flavours / Pistachio",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "trilece",
+            "name": "Trilece",
+            "prices": [
+              125
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot drinks",
+        "items": [
+          {
+            "id": "espresso",
+            "name": "Espresso",
+            "prices": [
+              50,
+              55,
+              65
+            ]
+          },
+          {
+            "id": "macchiato",
+            "name": "Macchiato",
+            "prices": [
+              50,
+              60,
+              75
+            ]
+          },
+          {
+            "id": "corto-classic",
+            "name": "Corto Classic",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "flat-white",
+            "name": "Flat White",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              75,
+              85
+            ]
+          },
+          {
+            "id": "cappuccino",
+            "name": "Cappuccino",
+            "prices": [
+              85,
+              100
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              85,
+              100
+            ]
+          },
+          {
+            "id": "cinnamon-latte",
+            "name": "Cinnamon Latte",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "toffee-nut-latte",
+            "name": "Toffee Nut Latte",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "nescaf",
+            "name": "Nescafé",
+            "prices": [
+              50,
+              60
+            ]
+          },
+          {
+            "id": "turkish-coffee",
+            "name": "Turkish Coffee",
+            "prices": [
+              35,
+              45
+            ]
+          },
+          {
+            "id": "french-coffee",
+            "name": "French Coffee",
+            "prices": [
+              65,
+              75
+            ]
+          },
+          {
+            "id": "french-choco-coffee",
+            "name": "French Choco Coffee",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "lotus-latte",
+            "name": "Lotus Latte",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "hot-chocolate",
+            "name": "Hot Chocolate",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "white-chocolate",
+            "name": "White Chocolate",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "hot-chocolate-marshmallow",
+            "name": "Hot Chocolate Marshmallow",
+            "prices": [
+              100,
+              115
+            ]
+          },
+          {
+            "id": "pistachio",
+            "name": "Pistachio",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "sahlab",
+            "name": "Sahlab",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "tea-tea-flavour",
+            "name": "Tea / Tea Flavour",
+            "prices": [
+              35,
+              45
+            ]
+          },
+          {
+            "id": "tea-with-milk",
+            "name": "Tea with Milk",
+            "prices": [
+              55
+            ]
+          },
+          {
+            "id": "karak-tea",
+            "name": "Karak Tea",
+            "prices": [
+              50
+            ]
+          },
+          {
+            "id": "matcha",
+            "name": "Matcha",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "anise-mint",
+            "name": "Anise / Mint",
+            "prices": [
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iced drinks",
+        "items": [
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              85,
+              95
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "shaken-espresso",
+            "name": "Shaken Espresso",
+            "prices": [
+              115,
+              125
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              110,
+              125
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              110,
+              125
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              110,
+              125
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              110,
+              125
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              110,
+              125
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              110,
+              125
+            ]
+          },
+          {
+            "id": "iced-chocolate",
+            "name": "Iced Chocolate",
+            "prices": [
+              100,
+              120
+            ]
+          },
+          {
+            "id": "boba-iced-tea",
+            "name": "Boba Iced Tea",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "boba-fruits",
+            "name": "Boba Fruits",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "milkshake",
+            "name": "Milkshake",
+            "prices": [
+              95,
+              115
+            ]
+          },
+          {
+            "id": "smoothie",
+            "name": "Smoothie",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "mojito",
+            "name": "Mojito",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "soft-drinks",
+            "name": "Soft Drinks",
+            "prices": [
+              25
+            ]
+          },
+          {
+            "id": "iced-tea",
+            "name": "Iced Tea",
+            "prices": [
+              45
+            ]
+          },
+          {
+            "id": "fresh-juices",
+            "name": "Fresh Juices",
+            "prices": [
+              65
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frappe",
+        "items": [
+          {
+            "id": "espresso-frappe",
+            "name": "Espresso Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "coffee-frappe",
+            "name": "Coffee Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "caramel-frappe",
+            "name": "Caramel Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "mocha-frappe",
+            "name": "Mocha Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "white-mocha-frappe",
+            "name": "White Mocha Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "dulce-de-leche-frappe",
+            "name": "Dulce de Leche Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "salted-caramel-frappe",
+            "name": "Salted Caramel Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "coffee-vanilla-frappe",
+            "name": "Coffee Vanilla Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "double-coffee-vanilla-frappe",
+            "name": "Double Coffee Vanilla Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "vanilla-cream-frappe",
+            "name": "Vanilla Cream Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "chocolate-cream-frappe",
+            "name": "Chocolate Cream Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "caramel-cream-frappe",
+            "name": "Caramel Cream Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "strawberry-cream-frappe",
+            "name": "Strawberry Cream Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "white-mocha-cream-frappe",
+            "name": "White Mocha Cream Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "matcha-frappe",
+            "name": "Matcha Frappe",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "frappe-desserts",
+            "name": "Frappe Desserts",
+            "prices": [
+              130
+            ]
+          }
+        ]
+      }
+    ],
+    "platz": [
+      {
+        "name": "Sandwiches",
+        "items": [
+          {
+            "id": "emmental-turkey-ciabatta",
+            "name": "Emmental Turkey Ciabatta",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "quesadilla-wrap",
+            "name": "Quesadilla Wrap",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-beef",
+            "name": "Chicken Beef",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "bbq",
+            "name": "BBQ",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "club-roast-beef-turkey-chicken",
+            "name": "Club (Roast Beef, Turkey & Chicken)",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "turkey-club",
+            "name": "Turkey Club",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "panini-halloumi",
+            "name": "Panini Halloumi",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "tuna-mix",
+            "name": "Tuna Mix",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-tandoori",
+            "name": "Chicken Tandoori",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-pesto",
+            "name": "Chicken Pesto",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "roast-beef-mushroom",
+            "name": "Roast Beef Mushroom",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "cheese-lovers",
+            "name": "Cheese Lovers",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "chicken-ranch",
+            "name": "Chicken Ranch",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-cheddar-cheese",
+            "name": "Chicken Cheddar Cheese",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "shish-tawook",
+            "name": "Shish Tawook",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "chicken-sweet-sour",
+            "name": "Chicken Sweet & Sour",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-alfredo",
+            "name": "Chicken Alfredo",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chicken-dynamite",
+            "name": "Chicken Dynamite",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "loaf-turkey-beef",
+            "name": "Loaf Turkey Beef",
+            "prices": [
+              140
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Salads",
+        "items": [
+          {
+            "id": "greek-salad",
+            "name": "Greek Salad",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "tuna-pasta-salad",
+            "name": "Tuna Pasta Salad",
+            "prices": [
+              140
+            ]
+          },
+          {
+            "id": "chef-salad",
+            "name": "Chef Salad",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "chicken-caesar-salad",
+            "name": "Chicken Caesar Salad",
+            "prices": [
+              135
+            ]
+          },
+          {
+            "id": "chicken-pasta-salad",
+            "name": "Chicken Pasta Salad",
+            "prices": [
+              150
+            ]
+          },
+          {
+            "id": "california-salad",
+            "name": "California Salad",
+            "prices": [
+              170
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Bakery",
+        "items": [
+          {
+            "id": "donut-mini-donut-box",
+            "name": "Donut / Mini Donut Box",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "croissant-plain-zaatar",
+            "name": "Croissant Plain / Zaatar",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "croissant-cheese",
+            "name": "Croissant Cheese",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "croissant-turkey-cheese",
+            "name": "Croissant Turkey & Cheese",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "croissant-cheese-olives",
+            "name": "Croissant Cheese & Olives",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "croissant-cookies",
+            "name": "Croissant Cookies",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "croissant-b-chamel",
+            "name": "Croissant Béchamel",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "cinnamon-roll",
+            "name": "Cinnamon Roll",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "english-cake",
+            "name": "English Cake",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "lemon-cake",
+            "name": "Lemon Cake",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "muffin",
+            "name": "Muffin",
+            "prices": [
+              65
+            ]
+          },
+          {
+            "id": "p-t-turkey-cheese",
+            "name": "Pâté Turkey & Cheese",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "p-t-zaatar",
+            "name": "Pâté Zaatar",
+            "prices": [
+              75
+            ]
+          },
+          {
+            "id": "cup-cinnamon-roll",
+            "name": "Cup Cinnamon Roll",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "mini-donut",
+            "name": "Mini Donut",
+            "prices": [
+              85
+            ]
+          },
+          {
+            "id": "mini-p-t",
+            "name": "Mini Pâté",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "mini-pizza",
+            "name": "Mini Pizza",
+            "prices": [
+              95
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desserts",
+        "items": [
+          {
+            "id": "cookies",
+            "name": "Cookies",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "molten-cake",
+            "name": "Molten Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "brownie",
+            "name": "Brownie",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "chocolate-truffle-cake",
+            "name": "Chocolate Truffle Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cheesecake-plain",
+            "name": "Cheesecake Plain",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cheesecake-flavours-pistachio",
+            "name": "Cheesecake Flavours / Pistachio",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "carrot-cake",
+            "name": "Carrot Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "tiramisu",
+            "name": "Tiramisu",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "honey-cake",
+            "name": "Honey Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "red-velvet",
+            "name": "Red Velvet",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "oreo-cake",
+            "name": "Oreo Cake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "cake-pops",
+            "name": "Cake Pops",
+            "prices": [
+              40
+            ]
+          },
+          {
+            "id": "brownie-chocolate-cookies",
+            "name": "Brownie Chocolate / Cookies",
+            "prices": [
+              95
+            ]
+          },
+          {
+            "id": "clair",
+            "name": "Éclair",
+            "prices": [
+              80
+            ]
+          },
+          {
+            "id": "profiterole-cup-flavours-pistachio",
+            "name": "Profiterole Cup / Flavours / Pistachio",
+            "prices": [
+              90
+            ]
+          },
+          {
+            "id": "trilece",
+            "name": "Trilece",
+            "prices": [
+              130
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hot drinks",
+        "items": [
+          {
+            "id": "espresso",
+            "name": "Espresso",
+            "prices": [
+              60,
+              70,
+              80
+            ]
+          },
+          {
+            "id": "macchiato",
+            "name": "Macchiato",
+            "prices": [
+              65,
+              75,
+              85
+            ]
+          },
+          {
+            "id": "corto-classic",
+            "name": "Corto Classic",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "flat-white",
+            "name": "Flat White",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              85,
+              100
+            ]
+          },
+          {
+            "id": "cappuccino",
+            "name": "Cappuccino",
+            "prices": [
+              100,
+              110
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              100,
+              110
+            ]
+          },
+          {
+            "id": "cinnamon-latte",
+            "name": "Cinnamon Latte",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "toffee-nut-latte",
+            "name": "Toffee Nut Latte",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "nescaf",
+            "name": "Nescafé",
+            "prices": [
+              50,
+              70
+            ]
+          },
+          {
+            "id": "turkish-coffee",
+            "name": "Turkish Coffee",
+            "prices": [
+              35,
+              50
+            ]
+          },
+          {
+            "id": "french-coffee",
+            "name": "French Coffee",
+            "prices": [
+              65,
+              75
+            ]
+          },
+          {
+            "id": "french-choco-coffee",
+            "name": "French Choco Coffee",
+            "prices": [
+              75,
+              85
+            ]
+          },
+          {
+            "id": "lotus-latte",
+            "name": "Lotus Latte",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "hot-chocolate",
+            "name": "Hot Chocolate",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "white-chocolate",
+            "name": "White Chocolate",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "hot-chocolate-marshmallow",
+            "name": "Hot Chocolate Marshmallow",
+            "prices": [
+              110,
+              130
+            ]
+          },
+          {
+            "id": "pistachio",
+            "name": "Pistachio",
+            "prices": [
+              135,
+              150
+            ]
+          },
+          {
+            "id": "sahlab",
+            "name": "Sahlab",
+            "prices": [
+              60
+            ]
+          },
+          {
+            "id": "tea-tea-flavour",
+            "name": "Tea / Tea Flavour",
+            "prices": []
+          },
+          {
+            "id": "tea-with-milk",
+            "name": "Tea with Milk",
+            "prices": [
+              35
+            ]
+          },
+          {
+            "id": "karak-tea",
+            "name": "Karak Tea",
+            "prices": [
+              45
+            ]
+          },
+          {
+            "id": "matcha",
+            "name": "Matcha",
+            "prices": [
+              130
+            ]
+          },
+          {
+            "id": "anise-mint",
+            "name": "Anise / Mint",
+            "prices": [
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iced drinks",
+        "items": [
+          {
+            "id": "americano",
+            "name": "Americano",
+            "prices": [
+              85,
+              100
+            ]
+          },
+          {
+            "id": "latte",
+            "name": "Latte",
+            "prices": [
+              100,
+              110
+            ]
+          },
+          {
+            "id": "shaken-espresso",
+            "name": "Shaken Espresso",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "dulce-de-leche-latte",
+            "name": "Dulce de Leche Latte",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "spanish-latte",
+            "name": "Spanish Latte",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "caramel-macchiato",
+            "name": "Caramel Macchiato",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "mocha",
+            "name": "Mocha",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "white-mocha",
+            "name": "White Mocha",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "salted-caramel-latte",
+            "name": "Salted Caramel Latte",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "iced-chocolate",
+            "name": "Iced Chocolate",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "boba-iced-tea",
+            "name": "Boba Iced Tea",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "boba-fruits",
+            "name": "Boba Fruits",
+            "prices": [
+              120
+            ]
+          },
+          {
+            "id": "milkshake",
+            "name": "Milkshake",
+            "prices": [
+              110
+            ]
+          },
+          {
+            "id": "smoothie",
+            "name": "Smoothie",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "mojito",
+            "name": "Mojito",
+            "prices": [
+              100
+            ]
+          },
+          {
+            "id": "soft-drinks",
+            "name": "Soft Drinks",
+            "prices": [
+              15
+            ]
+          },
+          {
+            "id": "iced-tea",
+            "name": "Iced Tea",
+            "prices": [
+              45
+            ]
+          },
+          {
+            "id": "fresh-juices",
+            "name": "Fresh Juices",
+            "prices": [
+              75
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frappe",
+        "items": [
+          {
+            "id": "espresso-frappe",
+            "name": "Espresso Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "coffee-frappe",
+            "name": "Coffee Frappe",
+            "prices": [
+              110,
+              120
+            ]
+          },
+          {
+            "id": "caramel-frappe",
+            "name": "Caramel Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "mocha-frappe",
+            "name": "Mocha Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "white-mocha-frappe",
+            "name": "White Mocha Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "dulce-de-leche-frappe",
+            "name": "Dulce de Leche Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "salted-caramel-frappe",
+            "name": "Salted Caramel Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "coffee-vanilla-frappe",
+            "name": "Coffee Vanilla Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "double-coffee-vanilla-frappe",
+            "name": "Double Coffee Vanilla Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "vanilla-cream-frappe",
+            "name": "Vanilla Cream Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "chocolate-cream-frappe",
+            "name": "Chocolate Cream Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "caramel-cream-frappe",
+            "name": "Caramel Cream Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "strawberry-cream-frappe",
+            "name": "Strawberry Cream Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "white-mocha-cream-frappe",
+            "name": "White Mocha Cream Frappe",
+            "prices": [
+              120,
+              130
+            ]
+          },
+          {
+            "id": "matcha-frappe",
+            "name": "Matcha Frappe",
+            "prices": [
+              130,
+              140
+            ]
+          },
+          {
+            "id": "frappe-desserts",
+            "name": "Frappe Desserts",
+            "prices": [
+              140
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

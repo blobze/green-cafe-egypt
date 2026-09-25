@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Menu | Green Café Egypt</title>
+    <meta name="description" content="Browse the Green Café menu by branch." />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b432e'/%3E%3Ctext x='32' y='45' font-size='42' text-anchor='middle' fill='%23f3eccd' font-family='Georgia'%3EG%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap");
+      :root {
+        --green: #0b432e;
+        --lime: #d8ed89;
+        --cream: #faf7ed;
+        --ink: #193a2b;
+        --muted: #637469;
+        --line: #dce4d7;
+        --paper: #fff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 138px;
+      }
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "DM Sans", Arial, sans-serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      .topbar {
+        background: var(--green);
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 30;
+      }
+      .topbar-inner {
+        max-width: 1320px;
+        margin: auto;
+        min-height: 62px;
+        padding: 8px clamp(16px, 4vw, 52px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .brand {
+        font: 800 1.6rem Outfit;
+        letter-spacing: -0.07em;
+      }
+      .brand span {
+        color: var(--lime);
+      }
+      .back {
+        font-size: 0.86rem;
+        font-weight: 700;
+      }
+      .discovery {
+        max-width: 1160px;
+        margin: 0 auto 30px;
+        padding: 0 clamp(16px, 3vw, 36px);
+      }
+      .discovery-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 14px;
+      }
+      .discovery-head h2 {
+        margin: 0;
+        font: 800 clamp(1.55rem, 2.3vw, 2.1rem) / 1 Outfit;
+        letter-spacing: -0.045em;
+      }
+      .discovery-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+      .paths {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .path {
+        min-height: 150px;
+        padding: 0;
+        border: 1px solid color-mix(in srgb, var(--path-accent) 25%, #fff);
+        border-radius: 19px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(125deg, color-mix(in srgb, var(--path-accent) 20%, #fff), color-mix(in srgb, var(--path-accent) 7%, #fff));
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .path[hidden] { display: none; }
+      .path:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(17, 54, 36, 0.09);
+      }
+      .path-media {
+        position: absolute;
+        inset: -8px -8px -8px auto;
+        width: 58%;
+      }
+      .path-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: right center;
+        display: block;
+        filter: drop-shadow(0 12px 16px rgba(17, 54, 36, 0.12));
+        transition: transform 0.22s ease;
+      }
+      .path:hover .path-media img {
+        transform: scale(1.035) translateX(-2px);
+      }
+      .path-copy {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 62%;
+        padding: 20px 14px 37px 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(90deg, color-mix(in srgb, var(--path-accent) 16%, #fff) 72%, transparent);
+        color: var(--ink);
+        z-index: 1;
+      }
+      .path small {
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.7;
+      }
+      .path strong {
+        margin-top: 3px;
+        font: 800 1.22rem/1.05 Outfit;
+        letter-spacing: -0.025em;
+      }
+      .path > .path-arrow {
+        position: absolute;
+        left: 17px;
+        bottom: 15px;
+        z-index: 2;
+        color: var(--path-accent);
+        font-size: 1.05rem;
+        font-weight: 800;
+      }
+      .path-arrow {
+        width: 0.9rem;
+        height: 0.9rem;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .path-breakfast { --path-accent: #658343; }
+      .path-savoury { --path-accent: #a16c2d; }
+      .path-meal { --path-accent: #286048; }
+      .path-sweet { --path-accent: #9a5369; }
+      .path-coffee { --path-accent: #76513d; }
+      .path-cold { --path-accent: #337d75; }
+      .back:hover {
+        text-decoration: underline;
+      }
+      .hero {
+        max-width: 1320px;
+        margin: auto;
+        padding: 34px clamp(16px, 4vw, 52px) 25px;
+      }
+      .hero-row {
+        display: grid;
+        grid-template-columns: 1fr minmax(300px, 370px);
+        align-items: end;
+        gap: 38px;
+      }
+      .eyebrow {
+        color: #698c51;
+        font-size: 0.73rem;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      .hero h1 {
+        font: 800 clamp(2.5rem, 4.5vw, 4.45rem) / 0.97 Outfit;
+        letter-spacing: -0.07em;
+        margin: 8px 0 9px;
+      }
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+      .branch-box label {
+        display: block;
+        font-size: 0.79rem;
+        font-weight: 800;
+        margin-bottom: 7px;
+      }
+      select {
+        appearance: none;
+        width: 100%;
+        min-height: 48px;
+        border: 1px solid #b9cab4;
+        border-radius: 12px;
+        padding: 11px 43px 11px 14px;
+        background: #fff
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%230b432e' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")
+          right 14px center/18px no-repeat;
+        color: var(--green);
+        font-weight: 700;
+      }
+      .tools {
+        position: sticky;
+        top: 62px;
+        z-index: 20;
+        background: #faf7edf3;
+        backdrop-filter: blur(14px);
+        border-block: 1px solid var(--line);
+      }
+      .tools-inner {
+        max-width: 1320px;
+        margin: auto;
+        padding: 9px clamp(16px, 4vw, 52px);
+        display: grid;
+        grid-template-columns: 190px minmax(240px, 1fr) auto;
+        gap: 14px;
+        align-items: center;
+      }
+      .search-wrap {
+        position: relative;
+      }
+      .search-wrap svg {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+      .search {
+        width: 100%;
+        min-height: 45px;
+        border: 1px solid #b9cbb4;
+        border-radius: 11px;
+        background: #fff;
+        padding: 9px 14px 9px 42px;
+        color: var(--ink);
+      }
+      .clear {
+        border: 0;
+        background: transparent;
+        color: var(--green);
+        font-weight: 800;
+        cursor: pointer;
+        padding: 8px;
+        visibility: hidden;
+      }
+      .clear.show {
+        visibility: visible;
+      }
+      .mobile-categories {
+        display: none;
+      }
+      .layout {
+        max-width: 1160px;
+        margin: auto;
+        padding: 27px clamp(16px, 3vw, 36px) 85px;
+        display: grid;
+        grid-template-columns: 190px minmax(0, 820px);
+        gap: 31px;
+        justify-content: center;
+      }
+      .sidebar {
+        position: sticky;
+        top: 137px;
+        align-self: start;
+        max-height: calc(100vh - 155px);
+        overflow: auto;
+        padding-right: 7px;
+      }
+      .side-label {
+        display: block;
+        margin: 2px 10px 9px;
+        color: #7a867e;
+        font: 700 0.72rem Outfit;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+      .categories {
+        display: grid;
+        gap: 4px;
+      }
+      .categories a {
+        border-radius: 9px;
+        padding: 9px 11px;
+        color: #53685a;
+        font-size: 0.87rem;
+        font-weight: 700;
+      }
+      .categories a:hover,
+      .categories a.active {
+        background: #e5efca;
+        color: var(--green);
+      }
+      .menu-sections {
+        display: grid;
+        gap: 44px;
+      }
+      .category {
+        --accent: #789a59;
+        --section-number: "01";
+        scroll-margin-top: 142px;
+        background: transparent;
+      }
+      .category-head {
+        min-height: 84px;
+        padding: 21px 145px 21px 23px;
+        margin-bottom: 14px;
+        border: 1px solid color-mix(in srgb, var(--accent) 28%, #fff);
+        border-left: 7px solid var(--accent);
+        border-radius: 18px;
+        background: linear-gradient(105deg, color-mix(in srgb, var(--accent) 17%, #fff), #fff 78%);
+        box-shadow: 0 8px 22px rgba(17, 54, 36, 0.045);
+        position: relative;
+        overflow: hidden;
+      }
+      .category-head h2 {
+        font: 800 clamp(1.65rem, 2.5vw, 2.35rem) / 1 Outfit;
+        letter-spacing: -0.05em;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+      }
+      #breakfast-bakery { --accent: #60823d; --section-number: "01"; }
+      #starters-salads-soups { --accent: #a66c26; --section-number: "02"; }
+      #sandwiches-burgers { --accent: #286048; --section-number: "03"; }
+      #pizza-pasta { --accent: #a5513b; --section-number: "04"; }
+      #mains-grills { --accent: #536e58; --section-number: "05"; }
+      #desserts { --accent: #9a5369; --section-number: "06"; }
+      #coffee-hot-drinks { --accent: #76513d; --section-number: "07"; }
+      #cold-drinks-frappe-matcha { --accent: #337d75; --section-number: "08"; }
+      .category-head:after {
+        content: var(--section-number);
+        position: absolute;
+        right: 21px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--accent);
+        font: 800 3.55rem/1 Outfit;
+        letter-spacing: -0.08em;
+        opacity: 0.22;
+      }
+      .subsections {
+        display: grid;
+        gap: 13px;
+      }
+      .subsection {
+        padding: 17px 19px 4px;
+        background: var(--paper);
+        border: 1px solid #dce5d8;
+        border-radius: 16px;
+        box-shadow: 0 7px 22px rgba(17, 54, 36, 0.035);
+      }
+      .subsection-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 7px;
+        color: var(--accent);
+        font: 750 1.05rem/1.2 Outfit;
+        letter-spacing: -0.015em;
+      }
+      .subsection-title:after {
+        content: "";
+        height: 1px;
+        background: currentColor;
+        opacity: 0.25;
+        flex: 1;
+      }
+      .product-list {
+        overflow: hidden;
+      }
+      .product {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #e7ece3;
+        background: transparent;
+        min-height: 72px;
+        padding: 14px 34px 14px 3px;
+        text-align: left;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        column-gap: 18px;
+        align-items: start;
+        color: var(--ink);
+        cursor: pointer;
+        position: relative;
+        transition: background 0.15s;
+      }
+      .product-list .product:last-child {
+        border-bottom: 0;
+      }
+      .product:hover {
+        background: var(--section-bg);
+      }
+      .product-main {
+        min-width: 0;
+      }
+      .product-name {
+        font: 700 1.03rem/1.3 Outfit;
+        letter-spacing: -0.012em;
+      }
+      .product-desc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        color: #748278;
+        font-size: 0.8rem;
+        line-height: 1.45;
+        margin-top: 4px;
+        max-width: 570px;
+      }
+      .price {
+        color: #52645a;
+        font-size: 0.91rem;
+        font-weight: 700;
+        white-space: nowrap;
+        padding: 1px 0;
+      }
+      .price small {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        margin-right: 3px;
+        opacity: 0.72;
+      }
+      .chevron {
+        position: absolute;
+        right: 2px;
+        top: 14px;
+        color: #8b998f;
+        font-size: 1.15rem;
+        transition: transform 0.15s;
+      }
+      .product:hover .chevron {
+        transform: translateX(2px);
+      }
+      .empty {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 17px;
+        padding: 62px 20px;
+        text-align: center;
+        color: var(--muted);
+      }
+      dialog {
+        border: 0;
+        padding: 0;
+        border-radius: 21px;
+        width: min(550px, calc(100vw - 26px));
+        max-height: min(800px, calc(100vh - 26px));
+        color: var(--ink);
+        box-shadow: 0 24px 75px #07170e50;
+      }
+      dialog::backdrop {
+        background: #0a1d15b8;
+        backdrop-filter: blur(3px);
+      }
+      .modal-head {
+        background: var(--green);
+        color: #fff;
+        padding: 25px 60px 22px 25px;
+        position: relative;
+      }
+      .modal-head .eyebrow {
+        color: var(--lime);
+      }
+      .modal-head h2 {
+        font: 800 clamp(1.75rem, 5vw, 2.55rem) / 1 Outfit;
+        letter-spacing: -0.05em;
+        margin: 7px 0;
+      }
+      .modal-price {
+        color: var(--lime);
+        font-weight: 800;
+      }
+      .branch-note {
+        color: #c9d7c9;
+        font-size: 0.77rem;
+        margin-top: 8px;
+      }
+      .modal-close {
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        width: 38px;
+        height: 38px;
+        border: 0;
+        border-radius: 50%;
+        background: #ffffff1f;
+        color: #fff;
+        font-size: 1.35rem;
+        cursor: pointer;
+      }
+      .modal-body {
+        padding: 24px;
+        overflow: auto;
+      }
+      .description {
+        color: var(--muted);
+        line-height: 1.55;
+        margin: 0;
+      }
+      .detail-block {
+        border-top: 1px solid var(--line);
+        padding-top: 18px;
+        margin-top: 18px;
+      }
+      .detail-block h3 {
+        font: 700 1.05rem Outfit;
+        margin: 0 0 6px;
+      }
+      .detail-block p {
+        color: var(--muted);
+        font-size: 0.84rem;
+        margin: 0 0 12px;
+      }
+      .price-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .price-chip {
+        border: 1px solid #b9ccb4;
+        border-radius: 100px;
+        background: #f8faf4;
+        padding: 9px 13px;
+        font-weight: 700;
+      }
+      .checks {
+        display: grid;
+        gap: 8px;
+      }
+      .check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid var(--line);
+        border-radius: 11px;
+        padding: 11px;
+        cursor: pointer;
+      }
+      .check input {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--green);
+      }
+      .selection-note {
+        min-height: 19px;
+        margin-top: 9px;
+        color: #a24531;
+        font-size: 0.81rem;
+        font-weight: 700;
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
+      footer {
+        background: var(--green);
+        color: #d0ddd1;
+        text-align: center;
+        padding: 27px 5%;
+        font-size: 0.86rem;
+      }
+      *:focus-visible {
+        outline: 3px solid #9bbd3d;
+        outline-offset: 3px;
+      }
+      @media (max-width: 760px) {
+        html {
+          scroll-padding-top: 143px;
+        }
+        .topbar-inner {
+          min-height: 57px;
+        }
+        .brand {
+          font-size: 1.42rem;
+        }
+        .back {
+          font-size: 0.77rem;
+        }
+        .hero {
+          padding: 24px 16px 18px;
+        }
+        .hero-row {
+          display: block;
+        }
+        .hero h1 {
+          font-size: 2.55rem;
+        }
+        .hero p {
+          font-size: 0.89rem;
+        }
+        .branch-box {
+          margin-top: 18px;
+        }
+        .discovery {
+          margin-bottom: 20px;
+          padding: 0 10px;
+        }
+        .discovery-head {
+          display: block;
+          padding: 0 6px;
+          margin-bottom: 11px;
+        }
+        .discovery-head h2 { font-size: 1.55rem; }
+        .discovery-head p {
+          margin-top: 5px;
+          font-size: 0.8rem;
+        }
+        .paths {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 8px;
+        }
+        .path {
+          min-height: 140px;
+          border-radius: 14px;
+        }
+        .path-media {
+          inset: 0 -13px 0 auto;
+          width: 67%;
+          opacity: 0.78;
+        }
+        .path-copy {
+          width: 72%;
+          padding: 16px 7px 34px 11px;
+          background: linear-gradient(90deg, color-mix(in srgb, var(--path-accent) 19%, #fff) 68%, transparent);
+        }
+        .path strong {
+          max-width: 105px;
+          font-size: 1.06rem;
+        }
+        .path > .path-arrow {
+          left: 11px;
+          bottom: 12px;
+        }
+        .tools {
+          top: 57px;
+        }
+        .tools-inner {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          padding: 8px 11px 6px;
+          gap: 6px;
+        }
+        .tools-inner > .eyebrow {
+          display: none;
+        }
+        .mobile-categories {
+          display: flex;
+          gap: 7px;
+          overflow-x: auto;
+          padding: 0 11px 9px;
+          scrollbar-width: none;
+        }
+        .mobile-categories::-webkit-scrollbar {
+          display: none;
+        }
+        .mobile-categories a {
+          white-space: nowrap;
+          border: 1px solid #bacbb4;
+          background: #fff;
+          border-radius: 100px;
+          padding: 8px 13px;
+          color: var(--green);
+          font-size: 0.79rem;
+          font-weight: 700;
+        }
+        .mobile-categories a.active {
+          background: var(--green);
+          border-color: var(--green);
+          color: #fff;
+        }
+        .layout {
+          display: block;
+          padding: 17px 10px 58px;
+        }
+        .sidebar {
+          display: none;
+        }
+        .menu-sections {
+          gap: 31px;
+        }
+        .category {
+          scroll-margin-top: 143px;
+        }
+        .category-head {
+          min-height: 75px;
+          padding: 17px 92px 17px 15px;
+          margin-bottom: 10px;
+        }
+        .category-head h2 {
+          font-size: 1.62rem;
+          max-width: calc(100% - 54px);
+        }
+        .category-head:after {
+          right: 14px;
+          font-size: 2.65rem;
+        }
+        .subsections {
+          padding: 0;
+          gap: 10px;
+        }
+        .subsection {
+          padding: 15px 14px 3px;
+          border-radius: 12px;
+        }
+        .product {
+          min-height: 74px;
+          padding: 14px 28px 13px 1px;
+          column-gap: 10px;
+        }
+        .product-name {
+          font-size: 0.96rem;
+        }
+        .product-desc {
+          font-size: 0.76rem;
+        }
+        .price {
+          font-size: 0.81rem;
+        }
+        .chevron {
+          right: 0;
+          top: 14px;
+        }
+        .modal-head {
+          padding: 22px 54px 20px 20px;
+        }
+        .modal-body {
+          padding: 20px;
+        }
+        dialog {
+          width: calc(100vw - 18px);
+          max-height: calc(100vh - 18px);
+          border-radius: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="./">green<span>.</span>café</a
+        ><a class="back" href="./#branches">← All branches</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-row">
+          <div>
+            <div class="eyebrow">Green Café</div>
+            <h1 id="branch-title">Menu</h1>
+            <p>Good food, good coffee, good mood.</p>
+          </div>
+          <div class="branch-box">
+            <label for="branch-select">Choose your branch</label
+            ><select
+              id="branch-select"
+              aria-label="Choose Green Café branch"
+            ></select>
+          </div>
+        </div>
+      </section>
+      <section class="discovery" aria-labelledby="browse-heading">
+        <div class="discovery-head">
+          <h2 id="browse-heading">What are you looking for?</h2>
+          <p>Jump straight to what you feel like.</p>
+        </div>
+        <nav class="paths" aria-label="Quick menu shortcuts">
+          <a class="path path-breakfast" href="#breakfast-bakery"><span class="path-media"><img src="cake.webp" alt="Green Café bakery selection" /></span><span class="path-copy"><small>Start the day</small><strong>Breakfast</strong></span><svg class="path-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg></a>
+          <a class="path path-savoury" href="#starters-salads-soups"><span class="path-media"><img src="starters.webp" alt="Green Café starter platter" /></span><span class="path-copy"><small>Something light</small><strong>Starters &amp; salads</strong></span><svg class="path-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg></a>
+          <a class="path path-meal" href="#mains-grills"><span class="path-media"><img src="mains.webp" alt="Green Café grilled meal" /></span><span class="path-copy"><small>Hungry?</small><strong>A full meal</strong></span><svg class="path-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg></a>
+          <a class="path path-sweet" href="#desserts"><span class="path-media"><img src="dessert.webp" alt="Green Café dessert" /></span><span class="path-copy"><small>Treat yourself</small><strong>Something sweet</strong></span><svg class="path-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg></a>
+          <a class="path path-coffee" href="#coffee-hot-drinks"><span class="path-media"><img src="coffee.webp" alt="Green Café coffee" /></span><span class="path-copy"><small>Your usual?</small><strong>Coffee</strong></span><svg class="path-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg></a>
+          <a class="path path-cold" href="#cold-drinks-frappe-matcha"><span class="path-media"><img src="iced-drink.webp" alt="Green Café iced drink" /></span><span class="path-copy"><small>Cool down</small><strong>A cold drink</strong></span><svg class="path-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" /></svg></a>
+        </nav>
+      </section>
+      <div class="tools">
+        <div class="tools-inner">
+          <span class="eyebrow">Find your favourite</span>
+          <div class="search-wrap">
+            <svg
+              width="19"
+              height="19"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#55705e"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.5-3.5" /></svg
+            ><input
+              class="search"
+              id="search"
+              type="search"
+              placeholder="Search the menu…"
+              autocomplete="off"
+            />
+          </div>
+          <button class="clear" id="clear-search" type="button">Clear</button>
+        </div>
+        <nav
+          class="mobile-categories"
+          id="mobile-categories"
+          aria-label="Menu sections"
+        ></nav>
+      </div>
+      <div class="layout">
+        <aside class="sidebar">
+          <span class="side-label">Menu</span>
+          <nav
+            class="categories"
+            id="categories"
+            aria-label="Menu sections"
+          ></nav>
+        </aside>
+        <div class="menu-sections" id="menu-content" aria-live="polite"></div>
+      </div>
+    </main>
+    <dialog id="product-dialog" aria-labelledby="modal-name">
+      <div class="modal-head">
+        <div class="eyebrow" id="modal-category"></div>
+        <h2 id="modal-name"></h2>
+        <div class="modal-price" id="modal-price"></div>
+        <div class="branch-note" id="modal-branch"></div>
+        <button class="modal-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </dialog>
+    <footer>Green Café · It’s all about good mood.</footer>
+    <script>
+      const $ = (s) => document.querySelector(s),
+        slug = (s) =>
+          s
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/^-|-$/g, "");
+      const sectionOrder = [
+        "Breakfast & Bakery",
+        "Starters, Salads & Soups",
+        "Sandwiches & Burgers",
+        "Pizza & Pasta",
+        "Mains & Grills",
+        "Desserts",
+        "Coffee & Hot Drinks",
+        "Cold Drinks, Frappe & Matcha",
+      ];
+      let data,
+        currentBranch,
+        currentMenu,
+        query = "",
+        observer;
+      const branchSelect = $("#branch-select"),
+        content = $("#menu-content"),
+        dialog = $("#product-dialog");
+      const sectionFor = (name) => {
+        if (/breakfast|egg|toast|croissant|bakery/i.test(name))
+          return "Breakfast & Bakery";
+        if (/snack|salad|soup/i.test(name))
+          return "Starters, Salads & Soups";
+        if (/sandwich|burger/i.test(name)) return "Sandwiches & Burgers";
+        if (/pasta|pizza/i.test(name)) return "Pizza & Pasta";
+        if (/grill|mexican|main/i.test(name)) return "Mains & Grills";
+        if (/dessert/i.test(name)) return "Desserts";
+        if (/hot coffee|hot drink/i.test(name)) return "Coffee & Hot Drinks";
+        return "Cold Drinks, Frappe & Matcha";
+      };
+      const formatPrice = (p) => `EGP ${p}`;
+      const priceLabel = (item) =>
+        item.prices.length === 0
+          ? "Price at branch"
+          : item.prices.length === 1
+            ? formatPrice(item.prices[0])
+            : `From ${formatPrice(Math.min(...item.prices))}`;
+      const priceMarkup = (item) => {
+        if (item.prices.length === 0) return "Price at branch";
+        const price =
+          item.prices.length === 1
+            ? item.prices[0]
+            : Math.min(...item.prices);
+        return `${item.prices.length > 1 ? "<small>FROM EGP</small>" : "<small>EGP</small>"}${price}`;
+      };
+      function initialBranch() {
+        const key = new URLSearchParams(location.search).get("branch");
+        return data.branches[key] ? key : Object.keys(data.branches)[0];
+      }
+      function splitByRules(source, items) {
+        const remaining = [...items],
+          defaultSection = sectionFor(source),
+          take = (title, test, section = defaultSection) => {
+            const picked = [];
+            for (let i = remaining.length - 1; i >= 0; i--)
+              if (test(remaining[i].name)) {
+                picked.unshift(remaining[i]);
+                remaining.splice(i, 1);
+              }
+            return { title, items: picked, section };
+          },
+          groups = [];
+        const add = (title, test, section) =>
+          groups.push(take(title, test, section));
+        if (source === "Breakfast")
+          add("Breakfast Plates", () => true);
+        else if (source === "Egg plates") {
+          add("Omelets", (n) => /omelet/i.test(n));
+          add("Pan Dishes", () => true);
+        } else if (source === "Baked toast & croissants") {
+          add("Toasts & Croques", (n) => /toast|croque/i.test(n));
+          add("Croissants", () => true);
+        } else if (source === "Snacks") {
+          add("Chicken Wings & Strips", (n) => /chicken/i.test(n));
+          add("Cheese & Sharing Starters", () => true);
+        } else if (source === "Salads") {
+          add("Chicken, Chef & Pasta Salads", (n) =>
+            /pasta|chicken|crispy|hawaiian|chef/i.test(n),
+          );
+          add("Cheese & Vegetable Salads", (n) =>
+            /greek|halloumi|avocado|california/i.test(n),
+          );
+          add("Other Salads", () => true);
+        } else if (source === "Sandwiches") {
+          add("Clubs & Turkey Sandwiches", (n) => /club|turkey|emmental/i.test(n));
+          add("Crispy & Grilled Chicken Sandwiches", (n) =>
+            /crispy chicken|zinger|quesadilla|tandoori|shish|grilled|fajita|mexican|pesto/i.test(
+              n,
+            ),
+          );
+          add("Chicken Sandwiches", (n) =>
+            /chicken|ranch|cheddar|bbq/i.test(n),
+          );
+          add("Beef, Cheese & Seafood Sandwiches", () => true);
+        } else if (source === "Burgers") {
+          add("Chicken Burgers", (n) => /chicken/i.test(n));
+          add("Classic Beef Burgers", (n) =>
+            /classic burger|cheese burger|mix cheese|double cheese/i.test(n),
+          );
+          add("Speciality Beef Burgers", () => true);
+        } else if (source === "Pasta") {
+          add("Tomato & Cream Pasta", (n) =>
+            /arrabiata|bolognaise|alfredo/i.test(n),
+          );
+          add("Speciality Pasta", (n) =>
+            /chicken|shrimp|noodle|chinese/i.test(n),
+          );
+          add("Baked & Cheese Pasta", () => true);
+        } else if (source === "Pizza") {
+          add("Chicken & Seafood Pizza", (n) => /chicken|shrimp|tuna/i.test(n));
+          add("Meat Pizza", (n) => /pastrami|sujuk|salami|meat/i.test(n));
+          add("Classic & Cheese Pizza", () => true);
+        } else if (source === "Main dishes") {
+          add("Grilled & Sauced Chicken", (n) =>
+            /grilled chicken|chicken fajita|chicken bbq|chicken mustard/i.test(n),
+          );
+          add("Chicken Specialities", (n) => /chicken|cordon/i.test(n));
+          add("Seafood Mains", (n) => /salmon/i.test(n));
+          add("Fillet & Steak", (n) => /fillet|steak/i.test(n));
+          add("Beef Specialities", () => true);
+        } else if (source === "Mexican") {
+          add("Nachos", (n) => /nachos/i.test(n));
+          add("Tacos & Quesadillas", () => true);
+        } else if (source === "Desserts") {
+          add("Cheesecakes", (n) => /cheesecake|san sebastian/i.test(n));
+          add("Cakes & Tiramisu", (n) =>
+            /tiramisu|honey cake|chocolate truffle|trilece|red velvet|\bcake\b/i.test(
+              n,
+            ),
+          );
+          add("Chocolate & Sweet Bites", (n) =>
+            /brownie|cookie|molten|fondue|donut|dount|cake pop|clair|profiterole/i.test(
+              n,
+            ),
+          );
+          add("Crêpes, Pancakes & Waffles", (n) =>
+            /cr.pe|pancake|waffle/i.test(n),
+          );
+          add("Dessert Classics", () => true);
+        } else if (source === "Bakery") {
+          add("Croissants", (n) => /croissant/i.test(n));
+          add("Donuts & Cinnamon Rolls", (n) =>
+            /donut|dount|cinnamon|roll/i.test(n),
+          );
+          add("Cakes & Muffins", (n) => /cake|muffin/i.test(n));
+          add("Savoury Pâtés & Bakes", () => true);
+        } else if (/Hot coffee|Hot drinks/i.test(source)) {
+          add("Espresso & Black Coffee", (n) =>
+            /^espresso|^macchiato|corto|americano/i.test(n),
+          );
+          add("Milk Coffees", (n) => /flat white|cappuccino|^latte$/i.test(n));
+          add("Flavoured Lattes", (n) =>
+            /cinnamon latte|spanish latte|dulce|salted caramel latte|toffee|lotus|pistachio/i.test(
+              n,
+            ),
+          );
+          add("Mochas & Caramel Macchiato", (n) =>
+            /mocha|caramel macchiato/i.test(n),
+          );
+          add("Turkish & French Coffee", (n) =>
+            /turkish|french|nescaf/i.test(n),
+          );
+          add("Chocolate & Sahlab", (n) => /chocolate|sahlab/i.test(n));
+          add("Matcha, Tea & Herbal", (n) =>
+            /matcha|tea|karak|anise|mint|herb|vitamin/i.test(n),
+          );
+          add("Other Hot Drinks", () => true);
+        } else if (/Iced coffee|Iced drinks/i.test(source)) {
+          add("Coffee Frappes", (n) => /frappe/i.test(n));
+          add("Iced Espresso & Lattes", (n) =>
+            /americano|shaken espresso|affogato|(^|iced )latte$|dulce|spanish|salted/i.test(
+              n,
+            ),
+          );
+          add("Iced Mochas & Macchiato", (n) =>
+            /macchiato|mocha|cappuccino/i.test(n),
+          );
+          add("Chocolate & Boba", (n) => /chocolate|boba/i.test(n));
+          add("Juices, Smoothies & Cold Refreshers", () => true);
+        } else if (source === "Frappe") {
+          add("Cream Frappes", (n) =>
+            /without coffee|cream/i.test(n),
+          );
+          add("Matcha & Dessert Frappes", (n) =>
+            /matcha|dessert/i.test(n),
+          );
+          add("Caramel & Dulce Frappes", (n) =>
+            /caramel frappe|dulce|salted/i.test(n),
+          );
+          add("Coffee & Espresso Frappes", () => true);
+        } else if (/Matcha|Healthy/i.test(source)) {
+          add("Matcha Drinks", (n) => /matcha/i.test(n));
+          add("Fruit & Avocado Blends", () => true);
+        } else if (/Drinks|Cold drinks/i.test(source)) {
+          add(
+            "Chocolate & Sahlab",
+            (n) => /^hot chocolate|sahlab/i.test(n),
+            "Coffee & Hot Drinks",
+          );
+          add(
+            "Tea & Herbal",
+            (n) => /^tea$|tea with milk|herb|karak|vitamin/i.test(n),
+            "Coffee & Hot Drinks",
+          );
+          add("Cream Frappes", (n) => /frappe/i.test(n));
+          add("Iced Tea & Chocolate", (n) => /iced tea|iced chocolate/i.test(n));
+          add("Juices, Smoothies & Cold Refreshers", (n) =>
+            /smoothie|milkshake|mojito|juice|boba/i.test(n),
+          );
+          add("Water & Soft Drinks", () => true);
+        } else add(source, () => true);
+        return groups.filter((group) => group.items.length);
+      }
+      function buildMenu(raw) {
+        const map = new Map(sectionOrder.map((name) => [name, []]));
+        raw.forEach((category) => {
+          splitByRules(category.name, category.items).forEach((group) =>
+            map.get(group.section).push(group),
+          );
+        });
+        return sectionOrder
+          .map((name) => ({ name, groups: map.get(name) }))
+          .filter((section) => section.groups.length);
+      }
+      function setBranch(key, push = true) {
+        currentBranch = key;
+        const branch = data.branches[key];
+        currentMenu = buildMenu(data.catalogs[branch.catalog]);
+        document.querySelectorAll(".path").forEach((path) => {
+          const target = path.getAttribute("href").slice(1);
+          path.hidden = !currentMenu.some(
+            (section) => slug(section.name) === target,
+          );
+        });
+        query = "";
+        branchSelect.value = key;
+        $("#branch-title").textContent = `${branch.name} Menu`;
+        $("#search").value = "";
+        document.title = `${branch.name} Menu | Green Café Egypt`;
+        if (push)
+          history.replaceState(
+            null,
+            "",
+            `menu.html?branch=${encodeURIComponent(key)}`,
+          );
+        render();
+      }
+      function renderNav(sections) {
+        const links = sections
+          .map(
+            (section) => `<a href="#${slug(section.name)}">${section.name}</a>`,
+          )
+          .join("");
+        $("#categories").innerHTML = links;
+        $("#mobile-categories").innerHTML = links;
+      }
+      function render() {
+        const q = query.trim().toLowerCase();
+        const sections = currentMenu
+          .map((section) => ({
+            ...section,
+            groups: section.groups
+              .map((group) => ({
+                ...group,
+                items: group.items.filter(
+                  (item) =>
+                    !q ||
+                    `${item.name} ${item.description || ""}`
+                      .toLowerCase()
+                      .includes(q),
+                ),
+              }))
+              .filter((group) => group.items.length),
+          }))
+          .filter((section) => section.groups.length);
+        $("#clear-search").classList.toggle("show", !!q);
+        renderNav(sections);
+        content.innerHTML =
+          sections
+            .map(
+              (section) =>
+                `<section class="category" id="${slug(section.name)}"><header class="category-head"><h2>${section.name}</h2></header><div class="subsections">${section.groups.map((group, groupIndex) => `<section class="subsection"><h3 class="subsection-title">${group.title}</h3><div class="product-list">${group.items.map((item, itemIndex) => `<button class="product" type="button" data-section="${encodeURIComponent(section.name)}" data-group="${groupIndex}" data-index="${itemIndex}" aria-label="View ${item.name}, ${priceLabel(item)}"><span class="product-main"><span class="product-name">${item.name}</span>${item.description ? `<span class="product-desc">${item.description}</span>` : ""}</span><span class="price">${priceMarkup(item)}</span><span class="chevron" aria-hidden="true">›</span></button>`).join("")}</div></section>`).join("")}</div></section>`,
+            )
+            .join("") ||
+          '<div class="empty">No menu items match your search.</div>';
+        content.querySelectorAll(".product").forEach(
+          (button) =>
+            (button.onclick = () => {
+              const section = sections.find(
+                  (value) =>
+                    value.name === decodeURIComponent(button.dataset.section),
+                ),
+                group = section.groups[Number(button.dataset.group)],
+                item = group.items[Number(button.dataset.index)];
+              openProduct(group.title, item);
+            }),
+        );
+        observeSections();
+      }
+      function openProduct(section, item) {
+        $("#modal-category").textContent = section;
+        $("#modal-name").textContent = item.name;
+        $("#modal-price").textContent = priceLabel(item);
+        $("#modal-branch").textContent = data.branches[currentBranch].name;
+        let html = item.description
+          ? `<p class="description">${item.description}</p>`
+          : "";
+        if (item.prices.length > 1)
+          html += `<div class="detail-block"><h3>Available prices</h3><div class="price-options">${item.prices.map((price) => `<span class="price-chip">${formatPrice(price)}</span>`).join("")}</div></div>`;
+        (item.modifiers ? [item.modifiers] : []).forEach((group, index) => {
+          html += `<div class="detail-block modifier" data-min="${group.min}" data-max="${group.max}"><h3>${group.title}${group.required ? " *" : ""}</h3><p>${group.min === group.max && group.min > 0 ? `Choose ${group.min}.` : group.max ? `Choose up to ${group.max}.` : ""}</p><div class="checks">${group.options.map((option) => `<label class="check"><input type="checkbox" value="${option}" name="group${index}"><span>${option}</span></label>`).join("")}</div><div class="selection-note" aria-live="polite"></div></div>`;
+        });
+        $("#modal-body").innerHTML = html;
+        dialog.showModal();
+        document.body.classList.add("no-scroll");
+        dialog.querySelectorAll(".modifier input").forEach(
+          (input) =>
+            (input.onchange = (event) => {
+              const group = event.target.closest(".modifier"),
+                boxes = [...group.querySelectorAll("input")],
+                max = Number(group.dataset.max),
+                min = Number(group.dataset.min);
+              if (boxes.filter((box) => box.checked).length > max)
+                event.target.checked = false;
+              const count = boxes.filter((box) => box.checked).length;
+              group.querySelector(".selection-note").textContent =
+                count < min
+                  ? `Choose ${min - count} more.`
+                  : count === min && min > 0
+                    ? "Done."
+                    : "";
+            }),
+        );
+      }
+      function closeDialog() {
+        dialog.close();
+        document.body.classList.remove("no-scroll");
+      }
+      $(".modal-close").onclick = closeDialog;
+      dialog.onclick = (event) => {
+        if (event.target === dialog) closeDialog();
+      };
+      branchSelect.onchange = () => setBranch(branchSelect.value);
+      $("#search").oninput = (event) => {
+        query = event.target.value;
+        render();
+      };
+      $("#clear-search").onclick = () => {
+        query = "";
+        $("#search").value = "";
+        render();
+      };
+      function observeSections() {
+        observer?.disconnect();
+        observer = new IntersectionObserver(
+          (entries) => {
+            const visible = entries
+              .filter((entry) => entry.isIntersecting)
+              .sort(
+                (a, b) => a.boundingClientRect.top - b.boundingClientRect.top,
+              )[0];
+            if (!visible) return;
+            document
+              .querySelectorAll(".categories a,.mobile-categories a")
+              .forEach((link) =>
+                link.classList.toggle(
+                  "active",
+                  link.hash === "#" + visible.target.id,
+                ),
+              );
+          },
+          { rootMargin: "-145px 0px -60% 0px" },
+        );
+        content
+          .querySelectorAll(".category")
+          .forEach((section) => observer.observe(section));
+      }
+      fetch("catalog.json")
+        .then((response) => response.json())
+        .then((result) => {
+          data = result;
+          Object.entries(data.branches).forEach(([key, branch]) => {
+            const option = document.createElement("option");
+            option.value = key;
+            option.textContent = `${branch.name} · ${branch.city}`;
+            branchSelect.append(option);
+          });
+          setBranch(initialBranch(), false);
+        })
+        .catch(
+          () =>
+            (content.innerHTML =
+              '<div class="empty">The menu is temporarily unavailable.</div>'),
+        );
+    </script>
+  </body>
+</html>
