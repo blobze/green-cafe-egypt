@@ -142,6 +142,9 @@
         position: absolute;
         inset: -8px -8px -8px auto;
         width: 58%;
+        isolation: isolate;
+        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 24%, #000 100%);
+        mask-image: linear-gradient(90deg, transparent 0, #000 24%, #000 100%);
       }
       .path-media img {
         width: 100%;
@@ -149,6 +152,7 @@
         object-fit: contain;
         object-position: right center;
         display: block;
+        mix-blend-mode: multiply;
         filter: drop-shadow(0 12px 16px rgba(17, 54, 36, 0.12));
         transition: transform 0.22s ease;
       }
@@ -272,6 +276,17 @@
       }
       .search-wrap {
         position: relative;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
       }
       .search-wrap svg {
         position: absolute;
@@ -404,6 +419,9 @@
         border-radius: 16px;
         box-shadow: 0 7px 22px rgba(17, 54, 36, 0.035);
       }
+      .subsection:nth-child(even) {
+        background: color-mix(in srgb, var(--accent) 3.5%, #fff);
+      }
       .subsection-title {
         display: flex;
         align-items: center;
@@ -444,7 +462,7 @@
         border-bottom: 0;
       }
       .product:hover {
-        background: var(--section-bg);
+        background: color-mix(in srgb, var(--accent) 7%, transparent);
       }
       .product-main {
         min-width: 0;
@@ -622,7 +640,10 @@
       }
       @media (max-width: 760px) {
         html {
-          scroll-padding-top: 143px;
+          scroll-padding-top: 96px;
+        }
+        .topbar {
+          position: relative;
         }
         .topbar-inner {
           min-height: 57px;
@@ -663,33 +684,43 @@
           font-size: 0.8rem;
         }
         .paths {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 8px;
+          display: flex;
+          gap: 10px;
+          overflow-x: auto;
+          padding: 2px 6px 10px;
+          margin-inline: -6px;
+          scroll-snap-type: x mandatory;
+          scrollbar-width: none;
+        }
+        .paths::-webkit-scrollbar {
+          display: none;
         }
         .path {
-          min-height: 140px;
-          border-radius: 14px;
+          flex: 0 0 min(78vw, 300px);
+          min-height: 154px;
+          border-radius: 17px;
+          scroll-snap-align: start;
         }
         .path-media {
-          inset: 0 -13px 0 auto;
-          width: 67%;
-          opacity: 0.78;
+          inset: -6px -7px -6px auto;
+          width: 62%;
+          opacity: 0.9;
         }
         .path-copy {
-          width: 72%;
-          padding: 16px 7px 34px 11px;
-          background: linear-gradient(90deg, color-mix(in srgb, var(--path-accent) 19%, #fff) 68%, transparent);
+          width: 62%;
+          padding: 18px 10px 38px 16px;
+          background: linear-gradient(90deg, color-mix(in srgb, var(--path-accent) 18%, #fff) 72%, transparent);
         }
         .path strong {
-          max-width: 105px;
-          font-size: 1.06rem;
+          max-width: 135px;
+          font-size: 1.18rem;
         }
         .path > .path-arrow {
-          left: 11px;
-          bottom: 12px;
+          left: 16px;
+          bottom: 15px;
         }
         .tools {
-          top: 57px;
+          top: 0;
         }
         .tools-inner {
           display: grid;
@@ -736,7 +767,7 @@
           gap: 31px;
         }
         .category {
-          scroll-margin-top: 143px;
+          scroll-margin-top: 96px;
         }
         .category-head {
           min-height: 75px;
@@ -760,8 +791,8 @@
           border-radius: 12px;
         }
         .product {
-          min-height: 74px;
-          padding: 14px 28px 13px 1px;
+          min-height: 68px;
+          padding: 12px 28px 11px 1px;
           column-gap: 10px;
         }
         .product-name {
@@ -775,7 +806,7 @@
         }
         .chevron {
           right: 0;
-          top: 14px;
+          top: 12px;
         }
         .modal-head {
           padding: 22px 54px 20px 20px;
@@ -833,6 +864,7 @@
         <div class="tools-inner">
           <span class="eyebrow">Find your favourite</span>
           <div class="search-wrap">
+            <label class="sr-only" for="search">Search the menu</label>
             <svg
               width="19"
               height="19"
@@ -869,7 +901,7 @@
             aria-label="Menu sections"
           ></nav>
         </aside>
-        <div class="menu-sections" id="menu-content" aria-live="polite"></div>
+        <div class="menu-sections" id="menu-content" aria-live="polite" aria-atomic="false"></div>
       </div>
     </main>
     <dialog id="product-dialog" aria-labelledby="modal-name">
@@ -1176,7 +1208,7 @@
                 `<section class="category" id="${slug(section.name)}"><header class="category-head"><h2>${section.name}</h2></header><div class="subsections">${section.groups.map((group, groupIndex) => `<section class="subsection"><h3 class="subsection-title">${group.title}</h3><div class="product-list">${group.items.map((item, itemIndex) => `<button class="product" type="button" data-section="${encodeURIComponent(section.name)}" data-group="${groupIndex}" data-index="${itemIndex}" aria-label="View ${item.name}, ${priceLabel(item)}"><span class="product-main"><span class="product-name">${item.name}</span>${item.description ? `<span class="product-desc">${item.description}</span>` : ""}</span><span class="price">${priceMarkup(item)}</span><span class="chevron" aria-hidden="true"><svg class="ui-arrow" viewBox="0 0 16 16"><path d="M6 3l5 5-5 5"/></svg></span></button>`).join("")}</div></section>`).join("")}</div></section>`,
             )
             .join("") ||
-          '<div class="empty">No menu items match your search.</div>';
+          '<div class="empty" role="status">No menu items match your search.</div>';
         content.querySelectorAll(".product").forEach(
           (button) =>
             (button.onclick = () => {
