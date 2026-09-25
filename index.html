@@ -1,18 +1,667 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Green Café Egypt | Good food, good mood</title><meta name="description" content="Find your Green Café branch, browse its menu, and get directions in Alexandria and Cairo."><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c472f'/%3E%3Ctext x='32' y='45' font-size='42' text-anchor='middle' fill='%23f3eccd' font-family='Georgia'%3EG%3C/text%3E%3C/svg%3E"><style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
-:root{--green:#0b432e;--lime:#d8ed89;--cream:#faf7ed;--ink:#193a2b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}header{position:sticky;z-index:10;top:0;background:#faf7edee;backdrop-filter:blur(14px);border-bottom:1px solid #dbe1d2}.nav{max-width:1320px;margin:auto;min-height:78px;display:flex;align-items:center;justify-content:space-between;padding:10px 5%;gap:22px}.brand{font-family:Outfit,sans-serif;font-weight:800;font-size:1.75rem;letter-spacing:-.07em;color:var(--green);white-space:nowrap}.brand span{color:#7aa63a}.navlinks{display:flex;gap:34px;align-items:center;font-weight:700;font-size:.91rem}.navlinks a:hover,.foot a:hover{text-decoration:underline}.navcta,.button{display:inline-flex;justify-content:center;align-items:center;gap:12px;border-radius:100px;padding:14px 23px;background:var(--lime);color:var(--green);font-weight:800;transition:transform .2s,background .2s}.navcta:hover,.button:hover{transform:translateY(-2px);background:#ecf7b8}.hero{background:var(--green);color:#fff;position:relative;min-height:620px;display:grid;grid-template-columns:43% 57%;overflow:hidden}.hero-copy{padding:95px 6% 105px max(6%,calc((100vw - 1320px)/2));position:relative;z-index:1;align-self:center}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.77rem;font-weight:800;color:var(--lime)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Outfit,Arial,sans-serif}h1{font-size:clamp(3.4rem,6vw,6.8rem);line-height:.94;letter-spacing:-.075em;margin:25px 0}h1 em{font-style:normal;color:var(--lime)}.hero p{font-size:1.1rem;line-height:1.6;max-width:440px;color:#e0e9dc;margin-bottom:32px}.hero-image{background:#f4f2e9;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:8px;padding:25px}.hero-image img{width:100%;height:100%;min-height:0;object-fit:contain;background:white;border-radius:15px}.hero .button{font-size:1rem}.section{max-width:1320px;margin:auto;padding:85px 5%}.section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:32px}.section h2{font-size:clamp(2.5rem,4.3vw,4.5rem);letter-spacing:-.065em;line-height:1;margin:9px 0}.section-head p{max-width:390px;line-height:1.6;color:#597061;margin:0}.intro{background:var(--lime);padding:30px 5%;text-align:center;font:700 clamp(1.15rem,2vw,1.7rem) Outfit;color:var(--green)}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}.chip{border:1px solid #b8cab5;border-radius:100px;background:transparent;padding:10px 19px;cursor:pointer;font-weight:700;color:var(--green)}.chip[aria-pressed=true],.chip:hover{background:var(--green);color:white;border-color:var(--green)}.branches{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid #d8e2d3;background:#fff;border-radius:18px;padding:27px;display:flex;flex-direction:column;min-height:214px}.card h3{font-size:1.47rem;letter-spacing:-.035em;margin:13px 0 7px}.city{color:#54815d;font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.address{color:#617366;line-height:1.5;font-size:.92rem;margin-bottom:23px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}.actions a{font-weight:800;font-size:.88rem;background:#eaf3da;border-radius:100px;padding:10px 15px}.actions a:first-child{background:var(--green);color:white}.actions a:hover{filter:brightness(.93)}.menu-section{background:#e8efdc}.menu-layout{display:grid;grid-template-columns:1fr 1.25fr;gap:60px;align-items:center}.menu-section h2{max-width:500px}.menu-section p{line-height:1.65;color:#536859;max-width:490px}.menu-list{display:grid;gap:10px}.menu-link{background:white;border-radius:14px;display:flex;justify-content:space-between;align-items:center;padding:19px 23px;font-weight:800;gap:18px}.menu-link:hover{background:var(--lime)}.menu-link span:last-child{font-size:1.4rem}.menu-entry{display:flex;align-items:stretch;gap:8px}.menu-entry .menu-link{flex:1;min-width:0}.dessert-shortcut{background:var(--lime);color:var(--green);border-radius:14px;padding:15px 18px;display:flex;align-items:center;font-weight:800;white-space:nowrap}.dessert-shortcut:hover{background:#d0e67c}.foot{background:var(--green);color:white;padding:58px 5% 25px}.foot-inner{max-width:1190px;margin:auto;display:flex;justify-content:space-between;gap:32px}.foot .brand{color:white}.foot p{color:#c3d5c5;line-height:1.5}.foot-links{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;font-weight:700}.copyright{max-width:1190px;margin:45px auto 0;border-top:1px solid #ffffff30;padding-top:20px;color:#b4cdb6;font-size:.8rem}a:focus-visible,button:focus-visible{outline:3px solid #a4c851;outline-offset:3px}@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:70px 6% 75px}.hero-image{height:350px;order:-1}.branches{grid-template-columns:repeat(2,1fr)}.menu-layout{grid-template-columns:1fr;gap:24px}.navlinks{gap:18px}}@media(max-width:600px){.nav{min-height:68px}.brand{font-size:1.5rem}.navlinks>a:not(.navcta){display:none}.navcta{padding:11px 15px;font-size:.83rem}.hero-image{height:320px;padding:10px;gap:6px}.hero-copy{padding:48px 6% 60px}h1{font-size:3.8rem}.section{padding:62px 5%}.section-head{display:block}.section-head p{margin-top:16px}.branches{grid-template-columns:1fr}.card{min-height:0;padding:24px}.intro{padding:24px 6%}.menu-entry{display:block;background:white;border-radius:14px;padding:6px}.menu-entry .menu-link{padding:15px}.dessert-shortcut{display:inline-flex;margin:0 0 7px 12px;padding:10px 15px;font-size:.9rem}.foot-inner{display:block}.foot-links{margin-top:30px}}
-.ui-arrow{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}</style></head><body><header><nav class="nav" aria-label="Main navigation"><a class="brand" href="#top" aria-label="Green Café home">green<span>.</span>café</a><div class="navlinks"><a class="navcta" href="#branches">Find your branch <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></a></div></nav></header><main id="top"><section class="hero"><div class="hero-copy"><div class="eyebrow">Green Café Egypt</div><h1>Good food.<br><em>Good mood.</em></h1><p>Your spot for a coffee, a bite, and a little time well spent. Find the Green Café nearest you.</p><a class="button" href="#branches">Explore our branches <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a></div><div class="hero-image" aria-label="Green Café drinks and desserts"><img src="coffee.webp" alt="Green Café coffee"/><img src="iced-drink.webp" alt="Green Café iced drink"/><img src="dessert.webp" alt="Green Café dessert"/><img src="cake.webp" alt="Green Café cake"/></div></section><div class="intro">A Green Café moment is never far away.</div><section class="section" id="branches"><div class="section-head"><div><div class="eyebrow" style="color:#5d8c45">Come on in</div><h2>Find your Green Café</h2></div><p>Choose your branch to open its menu immediately or get directions.</p></div><div class="chips" role="group" aria-label="Filter branches by city"><button class="chip" data-filter="all" aria-pressed="true">All locations</button><button class="chip" data-filter="alexandria" aria-pressed="false">Alexandria</button><button class="chip" data-filter="cairo" aria-pressed="false">Cairo</button></div><div class="branches" id="branch-list"></div></section></main><footer class="foot"><div class="foot-inner"><div><a class="brand" href="#top">green<span>.</span>café</a><p>It’s all about good mood.</p></div><div class="foot-links"><a href="#branches">Branches</a><a href="https://www.instagram.com/green_cafe.egypt/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@green_cafe.egypt" target="_blank" rel="noopener">TikTok</a></div></div><div class="copyright">© <span id="year"></span> Green Café Egypt</div></footer><script>
-const branches=[
-['Smouha Club','Alexandria','Smouha Club','https://www.google.com/maps/search/?api=1&query=Green%20Cafe%20Smouha%20Club%20Alexandria','smouha'],
-['Alex West Compound','Alexandria','3P7M+3WC, ADH Dheraa Al Bahri, Amreya 1','https://www.google.com/maps/dir/?api=1&destination=31.0626349%2C29.7351006','alex-west'],
-['Wadi Degla Club Moharam Beek','Alexandria','5WG6+85F, Ghait Al Enab Sharq, Karmouz','https://www.google.com/maps/dir/?api=1&destination=31.175822%2C29.9104201','moharam-beek'],
-['Teleperformance Alexandria','Alexandria','6XXC+M4F, El Raml 1','https://www.google.com/maps/dir/?api=1&destination=31.2491875%2C29.9702969','teleperformance-alex'],
-['Wadi Degla Club Maadi','Cairo','X753+X7W, Street 100, Maadi','https://www.google.com/maps/dir/?api=1&destination=29.9599971%2C31.2532023','wadi-maadi'],
-['Wadi Degla Club Nakhil','Cairo','3C5G+4Q3, Second New Cairo','https://www.google.com/maps/dir/?api=1&destination=30.0577654%2C31.4269219','wadi-nakhil'],
-['Bonyan Nasr City','Cairo','3825+3H5, Nasr City','https://www.google.com/maps/dir/?api=1&destination=30.0501375%2C31.3089844','bonyan-nasr'],
-['Platz','Cairo','2CCV+RW6, New Cairo 1','https://www.google.com/maps/dir/?api=1&destination=30.0220429%2C31.4447605','platz'],
-['Teleperformance Cairo','Cairo','2FF8+W2X, New Cairo 1','https://www.google.com/maps/dir/?api=1&destination=30.0248589%2C31.465179','teleperformance-cairo'],
-['Bonyan New Cairo','Cairo','2C8G+R6M, New Cairo 1','https://www.google.com/maps/dir/?api=1&destination=30.0170875%2C31.4255469','bonyan-new-cairo']];
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Green Café Egypt | Good food, good mood</title>
+    <meta
+      name="description"
+      content="Find your Green Café branch, browse its menu, and get directions in Alexandria and Cairo."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230c472f'/%3E%3Ctext x='32' y='45' font-size='42' text-anchor='middle' fill='%23f3eccd' font-family='Georgia'%3EG%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap");
+      :root {
+        --green: #0b432e;
+        --lime: #d8ed89;
+        --cream: #faf7ed;
+        --ink: #193a2b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "DM Sans", Arial, sans-serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+      }
+      header {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background: #faf7edee;
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid #dbe1d2;
+      }
+      .nav {
+        max-width: 1320px;
+        margin: auto;
+        min-height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5%;
+        gap: 22px;
+      }
+      .brand {
+        font-family: Outfit, sans-serif;
+        font-weight: 800;
+        font-size: 1.75rem;
+        letter-spacing: -0.07em;
+        color: var(--green);
+        white-space: nowrap;
+      }
+      .brand span {
+        color: #7aa63a;
+      }
+      .navlinks {
+        display: flex;
+        gap: 34px;
+        align-items: center;
+        font-weight: 700;
+        font-size: 0.91rem;
+      }
+      .navlinks a:hover,
+      .foot a:hover {
+        text-decoration: underline;
+      }
+      .navcta,
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 100px;
+        padding: 14px 23px;
+        background: var(--lime);
+        color: var(--green);
+        font-weight: 800;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+      .navcta:hover,
+      .button:hover {
+        transform: translateY(-2px);
+        background: #ecf7b8;
+      }
+      .hero {
+        background: var(--green);
+        color: #fff;
+        position: relative;
+        min-height: 540px;
+        display: grid;
+        grid-template-columns: 52% 48%;
+        overflow: hidden;
+      }
+      .hero-copy {
+        padding: 76px 6% 84px max(6%, calc((100vw - 1320px) / 2));
+        position: relative;
+        z-index: 1;
+        align-self: center;
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.77rem;
+        font-weight: 800;
+        color: var(--lime);
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: Outfit, Arial, sans-serif;
+      }
+      h1 {
+        font-size: clamp(3.4rem, 6vw, 6.8rem);
+        line-height: 0.94;
+        letter-spacing: -0.075em;
+        margin: 25px 0;
+      }
+      h1 em {
+        font-style: normal;
+        color: var(--lime);
+      }
+      .hero p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 440px;
+        color: #e0e9dc;
+        margin-bottom: 32px;
+      }
+      .hero-image {
+        background: linear-gradient(145deg, #e8eddf 0%, #f7f2e5 100%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1px;
+        padding: 0;
+        overflow: hidden;
+        isolation: isolate;
+      }
+      .hero-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        object-fit: contain;
+        background: transparent;
+        border-radius: 0;
+        mix-blend-mode: multiply;
+        filter: saturate(0.96) contrast(1.02);
+        padding: clamp(8px, 1.5vw, 20px);
+      }
+      .hero .button {
+        font-size: 1rem;
+      }
+      .section {
+        max-width: 1320px;
+        margin: auto;
+        padding: 85px 5%;
+      }
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 32px;
+      }
+      .section h2 {
+        font-size: clamp(2.5rem, 4.3vw, 4.5rem);
+        letter-spacing: -0.065em;
+        line-height: 1;
+        margin: 9px 0;
+      }
+      .section-head p {
+        max-width: 390px;
+        line-height: 1.6;
+        color: #597061;
+        margin: 0;
+      }
+      .intro {
+        background: var(--lime);
+        padding: 30px 5%;
+        text-align: center;
+        font: 700 clamp(1.15rem, 2vw, 1.7rem) Outfit;
+        color: var(--green);
+      }
+      .chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 26px;
+      }
+      .chip {
+        border: 1px solid #b8cab5;
+        border-radius: 100px;
+        background: transparent;
+        padding: 10px 19px;
+        cursor: pointer;
+        font-weight: 700;
+        color: var(--green);
+      }
+      .chip[aria-pressed="true"],
+      .chip:hover {
+        background: var(--green);
+        color: white;
+        border-color: var(--green);
+      }
+      .branches {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .card {
+        border: 1px solid #d8e2d3;
+        background: #fff;
+        border-radius: 18px;
+        padding: 27px;
+        display: flex;
+        flex-direction: column;
+        min-height: 214px;
+      }
+      .card h3 {
+        font-size: 1.47rem;
+        letter-spacing: -0.035em;
+        margin: 13px 0 7px;
+      }
+      .city {
+        color: #54815d;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+      .address {
+        color: #617366;
+        line-height: 1.5;
+        font-size: 0.92rem;
+        margin-bottom: 23px;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: auto;
+      }
+      .actions a {
+        font-weight: 800;
+        font-size: 0.88rem;
+        background: #eaf3da;
+        border-radius: 100px;
+        padding: 10px 15px;
+      }
+      .actions a:first-child {
+        background: var(--green);
+        color: white;
+      }
+      .actions a:hover {
+        filter: brightness(0.93);
+      }
+      .menu-section {
+        background: #e8efdc;
+      }
+      .menu-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .menu-section h2 {
+        max-width: 500px;
+      }
+      .menu-section p {
+        line-height: 1.65;
+        color: #536859;
+        max-width: 490px;
+      }
+      .menu-list {
+        display: grid;
+        gap: 10px;
+      }
+      .menu-link {
+        background: white;
+        border-radius: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 19px 23px;
+        font-weight: 800;
+        gap: 18px;
+      }
+      .menu-link:hover {
+        background: var(--lime);
+      }
+      .menu-link span:last-child {
+        font-size: 1.4rem;
+      }
+      .menu-entry {
+        display: flex;
+        align-items: stretch;
+        gap: 8px;
+      }
+      .menu-entry .menu-link {
+        flex: 1;
+        min-width: 0;
+      }
+      .dessert-shortcut {
+        background: var(--lime);
+        color: var(--green);
+        border-radius: 14px;
+        padding: 15px 18px;
+        display: flex;
+        align-items: center;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+      .dessert-shortcut:hover {
+        background: #d0e67c;
+      }
+      .foot {
+        background: var(--green);
+        color: white;
+        padding: 58px 5% 25px;
+      }
+      .foot-inner {
+        max-width: 1190px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+      }
+      .foot .brand {
+        color: white;
+      }
+      .foot p {
+        color: #c3d5c5;
+        line-height: 1.5;
+      }
+      .foot-links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        font-weight: 700;
+      }
+      .copyright {
+        max-width: 1190px;
+        margin: 45px auto 0;
+        border-top: 1px solid #ffffff30;
+        padding-top: 20px;
+        color: #b4cdb6;
+        font-size: 0.8rem;
+      }
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid #a4c851;
+        outline-offset: 3px;
+      }
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: 0;
+        }
+        .hero-copy {
+          padding: 70px 6% 75px;
+        }
+        .hero-image {
+          height: auto;
+          aspect-ratio: 1.72 / 1;
+          order: -1;
+        }
+        .branches {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .menu-layout {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .navlinks {
+          gap: 18px;
+        }
+      }
+      @media (max-width: 600px) {
+        .nav {
+          min-height: 68px;
+        }
+        .brand {
+          font-size: 1.5rem;
+        }
+        .navlinks > a:not(.navcta) {
+          display: none;
+        }
+        .navcta {
+          padding: 11px 15px;
+          font-size: 0.83rem;
+        }
+        .hero-image {
+          height: auto;
+          aspect-ratio: 1.42 / 1;
+          padding: 0;
+          gap: 1px;
+        }
+        .hero-image img {
+          padding: 8px;
+        }
+        .hero-copy {
+          padding: 48px 6% 60px;
+        }
+        h1 {
+          font-size: 3.8rem;
+        }
+        .section {
+          padding: 62px 5%;
+        }
+        .section-head {
+          display: block;
+        }
+        .section-head p {
+          margin-top: 16px;
+        }
+        .branches {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          min-height: 0;
+          padding: 24px;
+        }
+        .intro {
+          padding: 24px 6%;
+        }
+        .menu-entry {
+          display: block;
+          background: white;
+          border-radius: 14px;
+          padding: 6px;
+        }
+        .menu-entry .menu-link {
+          padding: 15px;
+        }
+        .dessert-shortcut {
+          display: inline-flex;
+          margin: 0 0 7px 12px;
+          padding: 10px 15px;
+          font-size: 0.9rem;
+        }
+        .foot-inner {
+          display: block;
+        }
+        .foot-links {
+          margin-top: 30px;
+        }
+      }
+      .ui-arrow {
+        width: 1em;
+        height: 1em;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Green Café home"
+          >green<span>.</span>café</a
+        >
+        <div class="navlinks">
+          <a class="navcta" href="#branches"
+            >Find your branch
+            <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" /></svg
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">Green Café Egypt</div>
+          <h1>Good food.<br /><em>Good mood.</em></h1>
+          <p>
+            Your spot for a coffee, a bite, and a little time well spent. Find
+            the Green Café nearest you.
+          </p>
+          <a class="button" href="#branches"
+            >Explore our branches
+            <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 12L12 4M6 4h6v6" /></svg
+          ></a>
+        </div>
+        <div class="hero-image" aria-label="Green Café drinks and desserts">
+          <img src="coffee.webp" alt="Green Café coffee" /><img
+            src="iced-drink.webp"
+            alt="Green Café iced drink"
+          /><img src="dessert.webp" alt="Green Café dessert" /><img
+            src="cake.webp"
+            alt="Green Café cake"
+          />
+        </div>
+      </section>
+      <div class="intro">A Green Café moment is never far away.</div>
+      <section class="section" id="branches">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow" style="color: #5d8c45">Come on in</div>
+            <h2>Find your Green Café</h2>
+          </div>
+          <p>
+            Choose your branch to open its menu immediately or get directions.
+          </p>
+        </div>
+        <div class="chips" role="group" aria-label="Filter branches by city">
+          <button class="chip" data-filter="all" aria-pressed="true">
+            All locations</button
+          ><button class="chip" data-filter="alexandria" aria-pressed="false">
+            Alexandria</button
+          ><button class="chip" data-filter="cairo" aria-pressed="false">
+            Cairo
+          </button>
+        </div>
+        <div class="branches" id="branch-list"></div>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="foot-inner">
+        <div>
+          <a class="brand" href="#top">green<span>.</span>café</a>
+          <p>It’s all about good mood.</p>
+        </div>
+        <div class="foot-links">
+          <a href="#branches">Branches</a
+          ><a
+            href="https://www.instagram.com/green_cafe.egypt/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          ><a
+            href="https://www.tiktok.com/@green_cafe.egypt"
+            target="_blank"
+            rel="noopener"
+            >TikTok</a
+          >
+        </div>
+      </div>
+      <div class="copyright">© <span id="year"></span> Green Café Egypt</div>
+    </footer>
+    <script>
+      const branches = [
+        [
+          "Smouha Club",
+          "Alexandria",
+          "Smouha Club",
+          "https://www.google.com/maps/search/?api=1&query=Green%20Cafe%20Smouha%20Club%20Alexandria",
+          "smouha",
+        ],
+        [
+          "Alex West Compound",
+          "Alexandria",
+          "3P7M+3WC, ADH Dheraa Al Bahri, Amreya 1",
+          "https://www.google.com/maps/dir/?api=1&destination=31.0626349%2C29.7351006",
+          "alex-west",
+        ],
+        [
+          "Wadi Degla Club Moharam Beek",
+          "Alexandria",
+          "5WG6+85F, Ghait Al Enab Sharq, Karmouz",
+          "https://www.google.com/maps/dir/?api=1&destination=31.175822%2C29.9104201",
+          "moharam-beek",
+        ],
+        [
+          "Teleperformance Alexandria",
+          "Alexandria",
+          "6XXC+M4F, El Raml 1",
+          "https://www.google.com/maps/dir/?api=1&destination=31.2491875%2C29.9702969",
+          "teleperformance-alex",
+        ],
+        [
+          "Wadi Degla Club Maadi",
+          "Cairo",
+          "X753+X7W, Street 100, Maadi",
+          "https://www.google.com/maps/dir/?api=1&destination=29.9599971%2C31.2532023",
+          "wadi-maadi",
+        ],
+        [
+          "Wadi Degla Club Nakhil",
+          "Cairo",
+          "3C5G+4Q3, Second New Cairo",
+          "https://www.google.com/maps/dir/?api=1&destination=30.0577654%2C31.4269219",
+          "wadi-nakhil",
+        ],
+        [
+          "Bonyan Nasr City",
+          "Cairo",
+          "3825+3H5, Nasr City",
+          "https://www.google.com/maps/dir/?api=1&destination=30.0501375%2C31.3089844",
+          "bonyan-nasr",
+        ],
+        [
+          "Platz",
+          "Cairo",
+          "2CCV+RW6, New Cairo 1",
+          "https://www.google.com/maps/dir/?api=1&destination=30.0220429%2C31.4447605",
+          "platz",
+        ],
+        [
+          "Teleperformance Cairo",
+          "Cairo",
+          "2FF8+W2X, New Cairo 1",
+          "https://www.google.com/maps/dir/?api=1&destination=30.0248589%2C31.465179",
+          "teleperformance-cairo",
+        ],
+        [
+          "Bonyan New Cairo",
+          "Cairo",
+          "2C8G+R6M, New Cairo 1",
+          "https://www.google.com/maps/dir/?api=1&destination=30.0170875%2C31.4255469",
+          "bonyan-new-cairo",
+        ],
+      ];
 
-const list=document.querySelector('#branch-list');function render(filter){list.innerHTML=branches.filter(b=>filter==='all'||b[1].toLowerCase()===filter).map(b=>`<article class="card"><span class="city">${b[1]}</span><h3>${b[0]}</h3><p class="address">${b[2]}</p><div class="actions"><a href="menu.html?branch=${encodeURIComponent(b[4])}" aria-label="Browse the ${b[0]} menu">Browse menu <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4"/></svg></a><a href="${b[3]}" target="_blank" rel="noopener" aria-label="Directions to ${b[0]}">Directions <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a></div></article>`).join('')};render('all');document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render(b.dataset.filter)}));document.querySelector('#year').textContent=new Date().getFullYear();
-</script></body></html>
+      const list = document.querySelector("#branch-list");
+      function render(filter) {
+        list.innerHTML = branches
+          .filter((b) => filter === "all" || b[1].toLowerCase() === filter)
+          .map(
+            (b) =>
+              `<article class="card"><span class="city">${b[1]}</span><h3>${b[0]}</h3><p class="address">${b[2]}</p><div class="actions"><a href="menu.html?branch=${encodeURIComponent(b[4])}" aria-label="Browse the ${b[0]} menu">Browse menu <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4"/></svg></a><a href="${b[3]}" target="_blank" rel="noopener" aria-label="Directions to ${b[0]}">Directions <svg class="ui-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6"/></svg></a></div></article>`,
+          )
+          .join("");
+      }
+      render("all");
+      document.querySelectorAll(".chip").forEach((b) =>
+        b.addEventListener("click", () => {
+          document
+            .querySelectorAll(".chip")
+            .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+          render(b.dataset.filter);
+        }),
+      );
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
