@@ -71,8 +71,29 @@
         color: var(--lime);
       }
       .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
         font-size: 0.86rem;
         font-weight: 700;
+      }
+      .ui-arrow {
+        width: 1em;
+        height: 1em;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex: none;
+      }
+      .back .ui-arrow {
+        width: 18px;
+        height: 18px;
+      }
+      .chevron .ui-arrow {
+        width: 15px;
+        height: 15px;
       }
       .discovery {
         max-width: 1160px;
