@@ -114,7 +114,7 @@
       .hero-copy {
         max-width: 840px;
         margin: auto;
-        padding: 44px 6% 46px;
+        padding: 42px 6% 38px;
         position: relative;
         z-index: 1;
         text-align: center;
@@ -157,21 +157,19 @@
         margin-bottom: 32px;
       }
       .hero-image {
-        width: min(94%, 1260px);
-        margin: 0 auto;
-        background:
-          radial-gradient(circle at 50% 110%, #dce8cd 0, transparent 42%),
-          linear-gradient(180deg, #f6f5ea 0%, #edf1e5 100%);
+        width: 100%;
+        margin: 0;
+        background: radial-gradient(ellipse at 50% 115%, #dfe9d1 0, transparent 45%), #f1f3e9;
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-rows: 1fr;
-        height: clamp(205px, 18vw, 270px);
-        gap: clamp(4px, 1vw, 18px);
-        padding: 10px clamp(10px, 2vw, 28px) 4px;
+        height: clamp(195px, 17vw, 250px);
+        gap: 0;
+        padding: 0 4%;
         overflow: hidden;
         isolation: isolate;
-        border-radius: 38px 38px 0 0;
-        box-shadow: 0 -18px 48px #052d1f52;
+        border-radius: 0;
+        box-shadow: inset 0 1px #ffffffa3;
       }
       .hero-image img {
         width: 100%;
@@ -181,19 +179,16 @@
         background: transparent;
         border-radius: 0;
         mix-blend-mode: multiply;
-        filter: saturate(0.98) contrast(1.03) brightness(1.02) drop-shadow(0 18px 18px #31513a22);
-        -webkit-mask-image: radial-gradient(ellipse 45% 57% at 50% 53%, #000 34%, #000b 63%, transparent 100%);
-        mask-image: radial-gradient(ellipse 45% 57% at 50% 53%, #000 34%, #000b 63%, transparent 100%);
-        padding: clamp(5px, 1vw, 13px);
-        transition: transform 0.35s ease;
+        object-position: center bottom;
+        filter: saturate(0.98) contrast(1.02) brightness(1.02) drop-shadow(0 14px 16px #31513a20);
+        -webkit-mask-image: radial-gradient(ellipse 47% 62% at 50% 54%, #000 32%, #000d 58%, transparent 100%);
+        mask-image: radial-gradient(ellipse 47% 62% at 50% 54%, #000 32%, #000d 58%, transparent 100%);
+        padding: 6px;
       }
-      .hero-image img:nth-child(1) { transform: translateY(7px) rotate(-2deg) scale(0.96); }
-      .hero-image img:nth-child(2) { transform: translateY(-2px) rotate(1.5deg) scale(1.04); }
-      .hero-image img:nth-child(3) { transform: translateY(5px) rotate(-1deg) scale(1.03); }
-      .hero-image img:nth-child(4) { transform: translateY(3px) rotate(1.5deg) scale(1.06); }
-      .hero-image:hover img {
-        transform: translateY(-3px) scale(1.02);
-      }
+      .hero-image img:nth-child(1) { transform: scale(0.92); }
+      .hero-image img:nth-child(2) { transform: scale(0.98); }
+      .hero-image img:nth-child(3) { transform: scale(1); }
+      .hero-image img:nth-child(4) { transform: scale(1.02); }
       .hero .button {
         font-size: 1rem;
       }
@@ -223,12 +218,11 @@
       }
       .intro {
         background: var(--lime);
-        padding: 23px 5% 25px;
+        padding: 20px 5%;
         text-align: center;
         color: var(--green);
       }
       .intro strong { display: block; font: 700 clamp(1.1rem, 1.8vw, 1.55rem) Outfit; }
-      .intro span { display: block; margin-top: 8px; font: 700 0.78rem "DM Sans"; letter-spacing: 0.13em; text-transform: uppercase; opacity: 0.76; }
       .chips {
         display: flex;
         gap: 10px;
@@ -409,8 +403,8 @@
           aspect-ratio: 1.7 / 1;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(2, 1fr);
-          width: min(94%, 760px);
-          border-radius: 28px 28px 0 0;
+          width: 100%;
+          border-radius: 0;
         }
         .branches {
           grid-template-columns: repeat(2, 1fr);
@@ -546,7 +540,7 @@
           />
         </div>
       </section>
-      <div class="intro"><strong>A Green Café moment is never far away.</strong><span>Coffee · Breakfast · Main dishes · Desserts</span></div>
+      <div class="intro"><strong>A Green Café moment is never far away.</strong></div>
       <section class="section" id="branches">
         <div class="section-head">
           <div>
