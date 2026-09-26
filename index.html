@@ -157,19 +157,19 @@
         margin-bottom: 32px;
       }
       .hero-image {
-        width: 100%;
-        margin: 0;
-        background: radial-gradient(ellipse at 50% 115%, #dfe9d1 0, transparent 45%), #f1f3e9;
+        width: min(94%, 1260px);
+        margin: 0 auto;
+        background: radial-gradient(ellipse at 50% 112%, #dce8cd 0, transparent 44%), linear-gradient(180deg, #f6f5ea 0%, #edf1e5 100%);
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-rows: 1fr;
-        height: clamp(195px, 17vw, 250px);
-        gap: 0;
-        padding: 0 4%;
+        height: clamp(200px, 17.5vw, 255px);
+        gap: clamp(3px, 0.8vw, 12px);
+        padding: 8px clamp(10px, 1.5vw, 22px) 2px;
         overflow: hidden;
         isolation: isolate;
-        border-radius: 0;
-        box-shadow: inset 0 1px #ffffffa3;
+        border-radius: 28px 28px 0 0;
+        box-shadow: 0 -12px 36px #052d1f32;
       }
       .hero-image img {
         width: 100%;
@@ -185,10 +185,10 @@
         mask-image: radial-gradient(ellipse 47% 62% at 50% 54%, #000 32%, #000d 58%, transparent 100%);
         padding: 6px;
       }
-      .hero-image img:nth-child(1) { transform: scale(0.92); }
-      .hero-image img:nth-child(2) { transform: scale(0.98); }
-      .hero-image img:nth-child(3) { transform: scale(1); }
-      .hero-image img:nth-child(4) { transform: scale(1.02); }
+      .hero-image img:nth-child(1) { transform: translateY(6px) scale(0.94); }
+      .hero-image img:nth-child(2) { transform: translateY(-2px) scale(1); }
+      .hero-image img:nth-child(3) { transform: translateY(4px) scale(1.02); }
+      .hero-image img:nth-child(4) { transform: translateY(3px) scale(1.03); }
       .hero .button {
         font-size: 1rem;
       }
@@ -403,8 +403,8 @@
           aspect-ratio: 1.7 / 1;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(2, 1fr);
-          width: 100%;
-          border-radius: 0;
+          width: min(94%, 760px);
+          border-radius: 22px 22px 0 0;
         }
         .branches {
           grid-template-columns: repeat(2, 1fr);
