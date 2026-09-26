@@ -104,16 +104,17 @@
         background: var(--green);
         color: #fff;
         position: relative;
-        min-height: 540px;
-        display: grid;
-        grid-template-columns: 52% 48%;
+        min-height: 0;
+        display: block;
         overflow: hidden;
       }
       .hero-copy {
-        padding: 76px 6% 84px max(6%, calc((100vw - 1320px) / 2));
+        max-width: 920px;
+        margin: auto;
+        padding: 52px 6% 58px;
         position: relative;
         z-index: 1;
-        align-self: center;
+        text-align: center;
       }
       .eyebrow {
         text-transform: uppercase;
@@ -134,7 +135,7 @@
         font-family: Outfit, Arial, sans-serif;
       }
       h1 {
-        font-size: clamp(3.4rem, 6vw, 6.8rem);
+        font-size: clamp(3rem, 5.2vw, 5.6rem);
         line-height: 0.94;
         letter-spacing: -0.075em;
         margin: 25px 0;
@@ -147,15 +148,18 @@
         font-size: 1.1rem;
         line-height: 1.6;
         max-width: 440px;
+        margin-left: auto;
+        margin-right: auto;
         color: #e0e9dc;
         margin-bottom: 32px;
       }
       .hero-image {
         background: #eef1e6;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: 1fr;
+        height: clamp(210px, 19vw, 285px);
+        gap: 0;
         padding: 0;
         overflow: hidden;
         isolation: isolate;
@@ -169,8 +173,8 @@
         border-radius: 0;
         mix-blend-mode: multiply;
         filter: saturate(0.96) contrast(1.02) brightness(1.01);
-        -webkit-mask-image: radial-gradient(ellipse 52% 54% at 50% 50%, #000 50%, transparent 100%);
-        mask-image: radial-gradient(ellipse 52% 54% at 50% 50%, #000 50%, transparent 100%);
+        -webkit-mask-image: radial-gradient(ellipse 52% 66% at 50% 50%, #000 46%, transparent 100%);
+        mask-image: radial-gradient(ellipse 52% 66% at 50% 50%, #000 46%, transparent 100%);
         padding: clamp(8px, 1.5vw, 20px);
       }
       .hero .button {
@@ -379,17 +383,14 @@
         outline-offset: 3px;
       }
       @media (max-width: 900px) {
-        .hero {
-          grid-template-columns: 1fr;
-          min-height: 0;
-        }
         .hero-copy {
-          padding: 70px 6% 75px;
+          padding: 48px 6% 54px;
         }
         .hero-image {
           height: auto;
-          aspect-ratio: 1.72 / 1;
-          order: -1;
+          aspect-ratio: 1.7 / 1;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
         }
         .branches {
           grid-template-columns: repeat(2, 1fr);
@@ -418,7 +419,7 @@
         }
         .hero-image {
           height: auto;
-          aspect-ratio: 1.42 / 1;
+          aspect-ratio: 1.22 / 1;
           padding: 0;
           gap: 1px;
         }
@@ -426,10 +427,10 @@
           padding: 8px;
         }
         .hero-copy {
-          padding: 48px 6% 60px;
+          padding: 38px 6% 44px;
         }
         h1 {
-          font-size: 3.8rem;
+          font-size: 3.35rem;
         }
         .section {
           padding: 62px 5%;
